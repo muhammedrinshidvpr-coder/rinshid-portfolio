@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Placeholder project image four">
+  <defs>
+    <linearGradient id="p4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1b1b"/>
+      <stop offset="100%" stop-color="#0e0e0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#p4Grad)"/>
+  <circle cx="400" cy="225" r="70" fill="none" stroke="#ff6b00" stroke-width="3" opacity="0.5"/>
+  <circle cx="400" cy="225" r="40" fill="none" stroke="#ffb693" stroke-width="2" opacity="0.4"/>
+  <text x="50%" y="80%" fill="#a98a7d" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="2" text-anchor="middle">PROJECT FOUR IMAGE</text>
+</svg>

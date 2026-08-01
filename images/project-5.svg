@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Placeholder project image five">
+  <defs>
+    <linearGradient id="p5Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#0e0e0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#p5Grad)"/>
+  <path d="M100 320 L250 180 L400 280 L550 140 L700 260" fill="none" stroke="#ff6b00" stroke-width="3" opacity="0.55"/>
+  <text x="50%" y="80%" fill="#a98a7d" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="2" text-anchor="middle">PROJECT FIVE IMAGE</text>
+</svg>

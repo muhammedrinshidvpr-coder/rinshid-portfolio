@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammed Rinshid V P — CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Lato', Arial, sans-serif;
+    background: #f0f0f0;
+    color: #1a1a1a;
+    font-size: 13px;
+    line-height: 1.55;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    max-width: 794px;
+    margin: 32px auto;
+    background: #ffffff;
+    padding: 52px 56px 48px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  }
+
+  /* HEADER */
+  .header {
+    border-bottom: 2.5px solid #1a1a2e;
+    padding-bottom: 16px;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #1a1a2e;
+    line-height: 1.1;
+  }
+
+  .headline {
+    font-size: 12.5px;
+    color: #444;
+    margin-top: 4px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  .headline span {
+    color: #1a1a2e;
+    font-weight: 700;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 20px;
+    margin-top: 10px;
+    font-size: 11.5px;
+    color: #444;
+  }
+
+  .contact-row a {
+    color: #1a56db;
+    text-decoration: none;
+  }
+
+  .contact-row a:hover { text-decoration: underline; }
+
+  .contact-row .c { color: #888; margin: 0 2px; }
+
+  /* SECTION */
+  .section {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1a1a2e;
+    border-bottom: 1px solid #c8c8d0;
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+  }
+
+  /* SUMMARY */
+  .summary p {
+    font-size: 12.5px;
+    color: #333;
+    line-height: 1.65;
+  }
+
+  /* EXPERIENCE */
+  .exp-item {
+    margin-bottom: 14px;
+  }
+
+  .exp-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .exp-role {
+    font-weight: 700;
+    font-size: 13px;
+    color: #1a1a2e;
+  }
+
+  .exp-company {
+    font-weight: 400;
+    color: #555;
+  }
+
+  .exp-date {
+    font-size: 11.5px;
+    color: #666;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .exp-sub {
+    font-size: 11.5px;
+    color: #555;
+    margin-bottom: 5px;
+    margin-top: 1px;
+  }
+
+  .bullets {
+    list-style: none;
+    padding: 0;
+  }
+
+  .bullets li {
+    font-size: 12.5px;
+    color: #333;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 2px;
+    line-height: 1.55;
+  }
+
+  .bullets li::before {
+    content: '•';
+    position: absolute;
+    left: 3px;
+    color: #1a1a2e;
+    font-weight: 700;
+  }
+
+  /* PROJECTS */
+  .proj-item {
+    margin-bottom: 13px;
+  }
+
+  .proj-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .proj-name {
+    font-weight: 700;
+    font-size: 13px;
+    color: #1a1a2e;
+  }
+
+  .proj-links {
+    font-size: 11px;
+    color: #1a56db;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .proj-links a {
+    color: #1a56db;
+    text-decoration: none;
+    margin-left: 8px;
+  }
+
+  .proj-tech {
+    font-size: 11.5px;
+    color: #555;
+    font-style: italic;
+    margin: 2px 0 4px;
+  }
+
+  /* TWO-COL LOWER */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  /* SKILLS */
+  .skill-row {
+    display: flex;
+    margin-bottom: 5px;
+    gap: 8px;
+    align-items: baseline;
+  }
+
+  .skill-cat {
+    font-weight: 700;
+    font-size: 12px;
+    color: #1a1a2e;
+    min-width: 96px;
+    flex-shrink: 0;
+  }
+
+  .skill-list {
+    font-size: 12px;
+    color: #333;
+  }
+
+  /* EDUCATION */
+  .edu-item {
+    margin-bottom: 10px;
+  }
+
+  .edu-school {
+    font-weight: 700;
+    font-size: 13px;
+    color: #1a1a2e;
+  }
+
+  .edu-degree {
+    font-size: 12px;
+    color: #444;
+  }
+
+  .edu-year {
+    font-size: 11.5px;
+    color: #777;
+  }
+
+  /* CERTS */
+  .cert-item {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .cert-name {
+    font-size: 12px;
+    color: #333;
+    font-weight: 700;
+  }
+
+  .cert-org {
+    font-size: 11px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e8;
+    text-align: center;
+    font-size: 10.5px;
+    color: #aaa;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; padding: 40px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Muhammed Rinshid V P</h1>
+    <div class="headline">
+      <span>AI Automation Engineer</span> &nbsp;·&nbsp;
+      <span>Full-Stack Developer</span> &nbsp;·&nbsp;
+      Founder & CEO, CosmIQ
+    </div>
+    <div class="contact-row">
+      <span>Kerala, India · Remote</span>
+      <span class="c">|</span>
+      <span>+91 75948 27429</span>
+      <span class="c">|</span>
+      <a href="mailto:muhammedrinshidvpr@gmail.com">muhammedrinshidvpr@gmail.com</a>
+      <span class="c">|</span>
+      <a href="https://linkedin.com/in/rinshidrazaq">linkedin.com/in/rinshidrazaq</a>
+      <span class="c">|</span>
+      <a href="https://github.com/muhammedrinshidvpr-coder">github.com/muhammedrinshidvpr-coder</a>
+      <span class="c">|</span>
+      <a href="https://rinshid-s-ai-future.vercel.app">Portfolio</a>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section summary">
+    <div class="section-title">Professional Summary</div>
+    <p>
+      Second-year B.Tech Computer Science student, AI Automation Engineer, and technical founder specializing in AI automation systems, workflow engineering, and full-stack web development. Currently engineers production n8n workflow infrastructure on AWS for an international client, including CI/CD automation and error-monitoring pipelines. Builds and ships production-ready software using Next.js, Supabase, Docker, n8n, and LLM APIs. Founded CosmIQ — an AI startup delivering automation systems, full-stack software products, and AI education to clients across India and the UK. Demonstrated ability to architect end-to-end systems, consult businesses on AI implementation, and train 100+ students in AI literacy. Strong focus on practical execution, systems design, and AI-driven infrastructure.
+    </p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="exp-item">
+      <div class="exp-top">
+        <div class="exp-role">AI Automation Engineer <span class="exp-company">— Azmora (Dubai, UAE)</span></div>
+        <div class="exp-date">June 2026 – Present · Remote</div>
+      </div>
+      <div class="exp-sub">Client project: Wusool Capital — investment operations automation</div>
+      <ul class="bullets">
+        <li>Engineer production n8n workflow automation infrastructure deployed on AWS for Wusool Capital, delivering the backend automation layer for the client's investment-operations platform.</li>
+        <li>Designed and implemented the CI/CD pipeline for automated deployment of workflow services, eliminating manual release steps and improving deployment reliability.</li>
+        <li>Built error-handling and monitoring workflows (error trigger → AI diagnosis → structured logging → real-time alerting) to ensure pipeline observability and uptime.</li>
+        <li>Own automation deliverables end-to-end within an agile, Linear-based sprint workflow as part of a distributed international engineering team.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-top">
+        <div class="exp-role">Founder &amp; CEO <span class="exp-company">— CosmIQ</span></div>
+        <div class="exp-date">October 2025 – Present · Kerala, India (Remote)</div>
+      </div>
+      <ul class="bullets">
+        <li>Founded an AI startup delivering automation systems, full-stack software products, and AI education to B2B clients and campus communities.</li>
+        <li>Architected and deployed end-to-end systems eliminating operational bottlenecks for 5+ businesses using AI-powered workflows.</li>
+        <li>Built self-hosted AI automation infrastructure using Docker, n8n, and LLM integrations (Google Gemini) on private servers.</li>
+        <li>Led rapid product development using AI-assisted engineering; shipped 5+ production projects within first year.</li>
+        <li>Managed client consulting engagements covering requirements gathering, system design, delivery, and post-launch support.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-top">
+        <div class="exp-role">Chief AI Mentor <span class="exp-company">— AiEd Academy</span></div>
+        <div class="exp-date">2025 – Present · Kerala, India</div>
+      </div>
+      <ul class="bullets">
+        <li>Designed and delivered AI literacy programmes training 100+ higher-secondary students in prompt engineering and practical AI tool usage.</li>
+        <li>Developed educational workflows integrating AI into learning productivity and future-skills curricula.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+
+    <div class="proj-item">
+      <div class="proj-top">
+        <div class="proj-name">AI Content Factory — Multi-Agent Content Generation Pipeline</div>
+        <div class="proj-links">
+          <a href="#">Demo</a>
+        </div>
+      </div>
+      <div class="proj-tech">React · LangGraph · FastAPI · Tavily · Groq · Google Gemini · Multi-Agent Workflow Design</div>
+      <ul class="bullets">
+        <li>Built a live AI content workflow that discovers niches, researches trends, selects topics, and generates platform-specific drafts for LinkedIn, YouTube, and Reels.</li>
+        <li>Designed a 4-step wizard UI with an agent-based pipeline for research, trend analysis, writing, editing, and final aggregation.</li>
+        <li>Implemented platform-aware output formatting so each channel receives content tailored to its format, tone, and length.</li>
+        <li>Created an iterative feedback loop to refine outputs before publishing, reducing manual content creation effort from hours to under 90 seconds.</li>
+      </ul>
+    </div>
+
+<div class="proj-item">
+      <div class="proj-top">
+        <div class="proj-name">Pragathi KEAM Portal — Data-Driven College Predictor</div>
+        <div class="proj-links">
+          <a href="#">Live</a>
+          <a href="https://github.com/muhammedrinshidvpr-coder/pragathi-keam-portal">GitHub</a>
+        </div>
+      </div>
+      <div class="proj-tech">React · Tailwind CSS · Supabase · PostgreSQL · PapaParse · Framer Motion · shadcn/ui</div>
+      <ul class="bullets">
+        <li>Architected a dynamic college predictor processing 1,500+ rows of historical KEAM cutoff data across multiple admission phases.</li>
+        <li>Built filtering workflows for instant eligibility checks by rank, category, and engineering branch; official tool for TKMCE Pragathi Help Desk 2026.</li>
+        <li>Engineered a secure admin dashboard with relational DB architecture and Row-Level Security (RLS) policies.</li>
+        <li>Built a custom bulk CSV ingestion pipeline via PapaParse for automated parsing and structured database uploads.</li>
+      </ul>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-top">
+        <div class="proj-name">CampusTrade — Digital Marketplace Ecosystem</div>
+        <div class="proj-links">
+          <a href="https://campustrade-cosmiq.vercel.app/">Live</a>
+          <a href="https://github.com/muhammedrinshidvpr-coder/campus-trade-v2">GitHub</a>
+        </div>
+      </div>
+      <div class="proj-tech">Next.js · React · Tailwind CSS · Supabase · PostgreSQL · Vercel</div>
+      <ul class="bullets">
+        <li>Engineered a high-speed campus marketplace for buying, selling, and promoting student services at TKM College.</li>
+        <li>Implemented WhatsApp deep-linking for frictionless buyer-seller communication and a custom client-side image compression pipeline reducing 5 MB uploads to under 200 KB.</li>
+        <li>Applied strict RLS policies across database and storage layers with premium ad rotation for startup visibility.</li>
+      </ul>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-top">
+        <div class="proj-name">CosmIQ Sync — Frictionless Lab Workspace</div>
+        <div class="proj-links">
+          <a href="https://cosmiq-sync.vercel.app/">Live</a>
+          <a href="https://github.com/muhammedrinshidvpr-coder/cosmiq-sync">GitHub</a>
+        </div>
+      </div>
+      <div class="proj-tech">React · TypeScript · Tailwind CSS · Supabase · PostgreSQL · Vercel</div>
+      <ul class="bullets">
+        <li>Secure zero-login workspace for real-time file and code transfer between lab systems and personal devices using 5-digit session keys.</li>
+        <li>Implemented PostgreSQL pg_cron scheduled cleanup to auto-delete sessions and media after 24 hours.</li>
+      </ul>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-top">
+        <div class="proj-name">Autonomous AI SDR &amp; Meeting Intelligence Pipeline</div>
+        <div class="proj-links">
+          <a href="https://github.com/muhammedrinshidvpr-coder/ai-meeting-architect">GitHub</a>
+        </div>
+      </div>
+      <div class="proj-tech">n8n · Docker · Google Gemini 1.5 Pro · Google Sheets · SMTP</div>
+      <ul class="bullets">
+        <li>Self-hosted AI outbound sales pipeline on Docker — automates company research, web scraping, CRM sync, and cold-email generation.</li>
+        <li>Reduced lead-processing time by ~90%; AI meeting intelligence parsed unstructured notes at 95% accuracy.</li>
+      </ul>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-top">
+        <div class="proj-name">RentVibe — B2C Rental &amp; Sales Platform</div>
+        <div class="proj-links">
+          <a href="https://rentvibe.vercel.app/">Live</a>
+          <a href="https://github.com/muhammedrinshidvpr-coder/rentvibe-landing">GitHub</a>
+        </div>
+      </div>
+      <div class="proj-tech">React · Tailwind CSS · Supabase · Vercel</div>
+      <ul class="bullets">
+        <li>Scalable rental and sales platform connecting local businesses with consumers; admin-curated inventory quality control workflow.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SKILLS + EDUCATION/CERTS -->
+  <div class="two-col">
+    <div>
+      <!-- SKILLS -->
+      <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skill-row">
+          <span class="skill-cat">AI / Automation</span>
+          <span class="skill-list">Prompt Engineering, LLM Orchestration, n8n, AI Agent Systems, Google Gemini API, AI Workflows</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Frontend</span>
+          <span class="skill-list">React, Next.js, TypeScript, Tailwind CSS, Framer Motion, shadcn/ui</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Backend / Infra</span>
+          <span class="skill-list">AWS, Supabase, PostgreSQL, Docker, CI/CD Pipelines, RLS Policies, REST APIs, Vercel, pg_cron</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Languages</span>
+          <span class="skill-list">JavaScript, Python, C</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Tools</span>
+          <span class="skill-list">Git, GitHub, Figma, PapaParse, SMTP Automation</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <!-- EDUCATION -->
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="edu-item">
+          <div class="edu-school">TKM College of Engineering</div>
+          <div class="edu-degree">B.Tech — Computer Science &amp; Engineering</div>
+          <div class="edu-year">Expected 2029 · Kollam, Kerala</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-school">Markaz CHSS</div>
+          <div class="edu-degree">Higher Secondary Education (Science)</div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="section">
+        <div class="section-title">Certifications</div>
+        <div class="cert-item">
+          <span class="cert-name">AI &amp; Prompt Engineering</span>
+          <span class="cert-org">IIT Madras · 2026</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-name">Claude 101</span>
+          <span class="cert-org">Anthropic · 2026</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-name">Classroom of Tomorrow Using AI</span>
+          <span class="cert-org">Udemy · 2025</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-name">Intel AI Aware Badge</span>
+          <span class="cert-org">Intel · 2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    References available upon request &nbsp;·&nbsp; rinshid-s-ai-future.vercel.app &nbsp;·&nbsp; github.com/muhammedrinshidvpr-coder
+  </div>
+
+</div>
+</body>
+</html>

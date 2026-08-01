@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Placeholder project image six">
+  <defs>
+    <linearGradient id="p6Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a1a08"/>
+      <stop offset="100%" stop-color="#131313"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#p6Grad)"/>
+  <rect x="580" y="60" width="160" height="110" rx="8" fill="#ffb693" opacity="0.12"/>
+  <rect x="60" y="240" width="340" height="16" fill="#ff6b00" opacity="0.6"/>
+  <rect x="60" y="280" width="240" height="16" fill="#353534"/>
+  <text x="50%" y="80%" fill="#a98a7d" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="2" text-anchor="middle">PROJECT SIX IMAGE</text>
+</svg>

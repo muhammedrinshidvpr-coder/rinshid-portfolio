@@ -1,0 +1,82 @@
+body {
+  background-color: #0e0e0e;
+  color: #e5e2e1;
+  min-height: 100vh;
+}
+
+.text-primary-container {
+  color: #ff6b00;
+}
+
+.sr-only-focusable {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  position: static;
+  left: auto;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+#mobile-nav[aria-hidden="false"] {
+  display: flex;
+}
+
+button,
+input,
+textarea,
+a {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(255, 107, 0, 0.6);
+  outline-offset: 3px;
+}
+
+.bg-primary-container {
+  background-color: #ff6b00;
+}
+
+.divider {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+/* Mobile nav, hidden by default, toggled via js/main.js */
+#mobile-nav {
+  display: none;
+}
+
+#mobile-nav.is-open {
+  display: flex;
+}
+
+/* Contact form success message, hidden until js/main.js reveals it */
+#contact-success {
+  display: none;
+}
+
+#contact-success.is-visible {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
