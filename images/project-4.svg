@@ -1,12 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Placeholder project image four">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="p4title">
+  <title id="p4title">CosmIQ Sync preview graphic</title>
   <defs>
     <linearGradient id="p4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1c1b1b"/>
-      <stop offset="100%" stop-color="#0e0e0e"/>
+      <stop offset="100%" stop-color="#0b0b0b"/>
     </linearGradient>
+    <radialGradient id="p4Glow" cx="85%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#ff6b00" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#ff6b00" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <rect width="800" height="450" fill="url(#p4Grad)"/>
-  <circle cx="400" cy="225" r="70" fill="none" stroke="#ff6b00" stroke-width="3" opacity="0.5"/>
-  <circle cx="400" cy="225" r="40" fill="none" stroke="#ffb693" stroke-width="2" opacity="0.4"/>
-  <text x="50%" y="80%" fill="#a98a7d" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="2" text-anchor="middle">PROJECT FOUR IMAGE</text>
+  <rect width="800" height="450" fill="url(#p4Glow)"/>
+  <text x="792" y="392" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="260" fill="#ffffff" fill-opacity="0.045" text-anchor="end">04</text>
+  <!-- session-key sync motif: two nodes exchanging a 5-digit key -->
+  <g stroke="#ff6b00" stroke-width="2" fill="none" opacity="0.55">
+    <circle cx="600" cy="130" r="26"/>
+    <circle cx="700" cy="130" r="26"/>
+    <path d="M 626 130 h 48" stroke-dasharray="4 5"/>
+    <path d="M 664 118 l 10 12 -10 12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="48" y="56" font-family="'JetBrains Mono', Consolas, monospace" font-size="14" letter-spacing="3" fill="#ff6b00">DEV TOOLS</text>
+  <text x="46" y="320" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="60" letter-spacing="-1.5" fill="#f2ede9">COSMIQ SYNC</text>
+  <rect x="0" y="446" width="800" height="4" fill="#ff6b00" fill-opacity="0.65"/>
 </svg>

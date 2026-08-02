@@ -8,7 +8,7 @@
     </title>
     <meta
       name="description"
-      content="Portfolio of Muhammed Rinshid V P — AI Automation Engineer, Full-Stack Developer, and Founder &amp; CEO of CosmIQ. Projects, experience, and skills in n8n, Next.js, Supabase, and LLM-powered automation."
+      content="Muhammed Rinshid V P — AI Automation Engineer, Full-Stack Developer, and Founder &amp; CEO of CosmIQ. Production n8n/AWS automation, Next.js/Supabase products, and 6 shipped projects with real impact."
     />
     <meta name="theme-color" content="#131313" />
     <meta
@@ -17,19 +17,20 @@
     />
     <meta
       property="og:description"
-      content="Production-grade AI automation, full-stack web apps, and startup leadership. Explore projects, experience, and contact information."
+      content="Production AI automation, full-stack web apps, and startup leadership. Explore case studies, experience, and contact information."
     />
+    <meta property="og:image" content="images/hero.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Muhammed Rinshid V P" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
       content="Muhammed Rinshid V P — AI Automation Engineer & Full-Stack Developer"
     />
     <meta
       name="twitter:description"
-      content="Production-grade AI automation, full-stack web apps, and startup leadership. Explore projects, experience, and contact information."
+      content="Production AI automation, full-stack web apps, and startup leadership. Explore case studies, experience, and contact information."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,6 +50,10 @@
           "addressRegion": "Kerala",
           "addressCountry": "IN"
         },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Azmora"
+        },
         "sameAs": [
           "https://linkedin.com/in/rinshidrazaq",
           "https://github.com/muhammedrinshidvpr-coder"
@@ -61,7 +66,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;family=Hanken+Grotesk:wght@400&amp;family=JetBrains+Mono:wght@500&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap"
       rel="stylesheet"
     />
     <script id="tailwind-config">
@@ -125,7 +130,7 @@
               full: "0.75rem",
             },
             spacing: {
-              "section-gap-mobile": "80px",
+              "section-gap-mobile": "72px",
               base: "8px",
               "container-max": "1280px",
               gutter: "24px",
@@ -142,9 +147,9 @@
             },
             fontSize: {
               "display-lg": [
-                "80px",
+                "76px",
                 {
-                  lineHeight: "1.1",
+                  lineHeight: "1.08",
                   letterSpacing: "-0.02em",
                   fontWeight: "800",
                 },
@@ -159,21 +164,22 @@
               "headline-md": [
                 "32px",
                 {
-                  lineHeight: "1.3",
+                  lineHeight: "1.25",
                   fontWeight: "700",
                 },
               ],
               "display-lg-mobile": [
-                "48px",
+                "36px",
                 {
-                  lineHeight: "1.1",
+                  lineHeight: "1.18",
+                  letterSpacing: "-0.01em",
                   fontWeight: "800",
                 },
               ],
               "headline-xl": [
-                "48px",
+                "36px",
                 {
-                  lineHeight: "1.2",
+                  lineHeight: "1.22",
                   fontWeight: "700",
                 },
               ],
@@ -209,19 +215,26 @@
       class="fixed w-full z-50 bg-background dark:bg-background border-b border-white/10 full-width top-0"
     >
       <div
-        class="flex justify-between items-center w-full px-gutter py-6 max-w-container-max mx-auto"
+        class="flex justify-between items-center w-full px-gutter py-5 max-w-container-max mx-auto"
       >
         <a
-          class="font-display-lg text-display-lg-mobile md:text-headline-md tracking-tighter text-on-surface dark:text-on-surface"
+          class="font-display-lg text-2xl md:text-headline-md tracking-tighter text-on-surface dark:text-on-surface"
           href="#"
         >
           RINSHID
         </a>
         <nav
-          class="hidden md:flex items-center gap-8"
+          class="hidden lg:flex items-center gap-7"
           aria-label="Primary site links"
         >
-          <ul class="flex items-center gap-8">
+          <ul class="flex items-center gap-7">
+            <li>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
+                href="#about"
+                >About</a
+              >
+            </li>
             <li>
               <a
                 class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
@@ -243,10 +256,24 @@
                 >Skills</a
               >
             </li>
+            <li>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
+                href="#education"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
           </ul>
         </nav>
         <a
-          class="hidden md:inline-flex items-center justify-center bg-primary-container text-surface-container-lowest font-label-caps text-label-caps px-6 py-3 rounded hover:scale-95 transition-transform duration-300"
+          class="hidden lg:inline-flex items-center justify-center bg-primary-container text-surface-container-lowest font-label-caps text-label-caps px-6 py-3 rounded hover:scale-95 transition-transform duration-300"
           href="#contact"
         >
           Hire Me
@@ -257,7 +284,7 @@
           aria-expanded="false"
           aria-controls="mobile-nav"
           aria-label="Toggle navigation"
-          class="md:hidden text-on-surface"
+          class="lg:hidden text-on-surface -mr-2 p-2"
         >
           <span class="material-symbols-outlined text-3xl">menu</span>
         </button>
@@ -265,47 +292,54 @@
       <div
         id="mobile-nav"
         aria-hidden="true"
-        class="md:hidden flex-col gap-4 px-gutter pb-6 bg-background"
+        class="lg:hidden flex-col gap-1 px-gutter pb-6 bg-background border-t border-white/10"
       >
-        <ul class="flex flex-col gap-4">
+        <ul class="flex flex-col gap-1 pt-4">
           <li>
             <a
-              class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
+              class="flex items-center py-3 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
+              href="#about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="flex items-center py-3 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
               href="#projects"
               >Projects</a
             >
           </li>
           <li>
             <a
-              class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
+              class="flex items-center py-3 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
               href="#experience"
               >Experience</a
             >
           </li>
           <li>
             <a
-              class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
+              class="flex items-center py-3 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
               href="#skills"
               >Skills</a
             >
           </li>
           <li>
             <a
-              class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
+              class="flex items-center py-3 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
               href="#education"
               >Education</a
             >
           </li>
           <li>
             <a
-              class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
+              class="flex items-center py-3 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300"
               href="#contact"
               >Contact</a
             >
           </li>
-          <li>
+          <li class="pt-2">
             <a
-              class="inline-flex items-center justify-center bg-primary-container text-surface-container-lowest font-label-caps text-label-caps px-6 py-3 rounded"
+              class="flex items-center justify-center bg-primary-container text-surface-container-lowest font-label-caps text-label-caps px-6 py-4 rounded"
               href="#contact"
               >Hire Me</a
             >
@@ -316,273 +350,451 @@
     <main
       id="main-content"
       aria-label="Portfolio content"
-      class="pt-[100px] md:pt-[120px]"
+      class="pt-[84px] md:pt-[100px]"
     >
       <!-- Hero Section -->
       <section
-        class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop"
+        class="scroll-mt-[84px] md:scroll-mt-[100px] max-w-container-max mx-auto px-gutter pt-12 md:pt-20 pb-section-gap-mobile md:pb-section-gap-desktop"
       >
-        <div class="flex flex-col md:flex-row gap-16 items-start">
-          <div class="w-full md:w-1/2 flex flex-col gap-8 relative z-10">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+          <div class="w-full lg:w-1/2 flex flex-col gap-6 relative z-10">
+            <p
+              class="font-label-caps text-label-caps text-primary-container"
+            >
+              AI AUTOMATION ENGINEER · FULL-STACK DEVELOPER · FOUNDER, COSMIQ
+            </p>
             <h1
               class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface"
             >
-              AI Automation<br />Engineer &amp; Builder
+              I build automation that ships.
             </h1>
-            <ul
-              class="flex flex-col gap-4 font-body-lg text-body-lg text-on-surface-variant"
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+              I design AI-driven automation systems and full-stack products
+              for teams that need results, not prototypes — currently
+              engineering production automation infrastructure for an
+              international client while building CosmIQ.
+            </p>
+            <div
+              class="inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-surface px-4 py-2"
             >
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary-container"
-                  >stars</span
-                >
-                Production n8n &amp; AWS automation infrastructure
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary-container"
-                  >stars</span
-                >
-                Founder &amp; CEO, CosmIQ
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary-container"
-                  >stars</span
-                >
-                Full-stack: Next.js, React, Supabase
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary-container"
-                  >stars</span
-                >
-                Trained 100+ students in AI literacy
-              </li>
-            </ul>
-            <div class="flex flex-wrap gap-4 mt-8">
-              <div
-                class="bg-surface rounded-full px-8 py-4 flex items-center gap-2 border border-white/10"
+              <span
+                class="w-2 h-2 rounded-full bg-primary-container animate-pulse flex-shrink-0"
+              ></span>
+              <span class="font-label-caps text-label-caps text-on-surface-variant"
+                >Open to freelance &amp; consulting work</span
               >
-                <span class="font-headline-md text-headline-md text-on-surface"
-                  >6+</span
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 mt-2">
+              <a
+                href="#projects"
+                class="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-primary-container text-surface-container-lowest font-label-caps text-label-caps px-8 py-4 rounded hover:scale-[0.97] transition-transform duration-300 min-h-[48px]"
+              >
+                View Work
+                <span class="material-symbols-outlined text-base"
+                  >arrow_outward</span
+                >
+              </a>
+              <a
+                href="Rinshid_CV.html"
+                target="_blank"
+                rel="noopener"
+                class="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-transparent border border-white/20 text-on-surface font-label-caps text-label-caps px-8 py-4 rounded hover:bg-on-surface hover:text-surface-container-lowest transition-colors duration-300 min-h-[48px]"
+              >
+                Download Resume
+              </a>
+            </div>
+            <p
+              class="font-body-md text-sm text-on-surface-variant border-t border-white/10 pt-6 mt-2"
+            >
+              6+ production projects shipped · 100+ students trained in AI
+              literacy · Live AWS automation infrastructure for an
+              international client
+            </p>
+            <div class="flex flex-col gap-3 pt-2">
+              <p class="font-label-caps text-label-caps text-on-surface-variant opacity-60">
+                Currently building with
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="font-display-lg text-sm tracking-wide border border-white/10 bg-surface rounded px-4 py-2 text-on-surface-variant"
+                  >AZMORA</span
                 >
                 <span
-                  class="font-body-md text-body-md text-on-surface-variant leading-tight"
+                  class="font-display-lg text-sm tracking-wide border border-white/10 bg-surface rounded px-4 py-2 text-on-surface-variant"
+                  >COSMIQ</span
+                >
+                <span
+                  class="font-display-lg text-sm tracking-wide border border-white/10 bg-surface rounded px-4 py-2 text-on-surface-variant"
+                  >WUSOOL CAPITAL</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 relative">
+            <div
+              aria-hidden="true"
+              class="absolute -top-10 -right-10 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"
+            ></div>
+            <div class="relative rounded-lg overflow-hidden border border-white/10">
+              <img
+                class="w-full h-auto object-cover aspect-[4/3] lg:aspect-[4/5]"
+                alt="Muhammed Rinshid V P working at a backlit desktop setup"
+                src="images/hero.jpg"
+                width="1448"
+                height="1086"
+              />
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/50 via-transparent to-transparent"
+              ></div>
+            </div>
+            <div
+              class="absolute -bottom-6 left-6 right-6 sm:right-auto flex flex-wrap gap-3"
+            >
+              <div
+                class="bg-surface rounded px-6 py-4 flex items-center gap-3 border border-white/10"
+              >
+                <span class="font-headline-md text-2xl text-on-surface">6+</span>
+                <span
+                  class="font-body-md text-sm text-on-surface-variant leading-tight"
                   >Projects<br />Shipped</span
                 >
               </div>
               <div
-                class="bg-surface rounded-full px-8 py-4 flex items-center gap-2 border border-white/10"
+                class="bg-surface rounded px-6 py-4 flex items-center gap-3 border border-white/10"
               >
-                <span class="font-headline-md text-headline-md text-on-surface"
-                  >100+</span
-                >
+                <span class="font-headline-md text-2xl text-on-surface">100+</span>
                 <span
-                  class="font-body-md text-body-md text-on-surface-variant leading-tight"
+                  class="font-body-md text-sm text-on-surface-variant leading-tight"
                   >Students<br />Trained</span
                 >
               </div>
             </div>
           </div>
-          <div class="w-full md:w-1/2 relative">
-            <div
-              class="absolute inset-0 bg-gradient-to-tr from-surface-container-lowest to-transparent opacity-80 z-10 pointer-events-none"
-            ></div>
-            <img
-              class="w-full h-auto object-cover rounded-lg opacity-50 mix-blend-luminosity grayscale"
-              alt="Developer typing on a keyboard, backlit by monitor glow"
-              src="images/hero.jpg"
-            />
-          </div>
         </div>
       </section>
       <!-- About Section -->
       <section
-        class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
+        class="scroll-mt-[84px] md:scroll-mt-[100px] max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
         id="about"
       >
-        <div class="text-center mb-16">
-          <h2 class="font-headline-md text-headline-md text-on-surface mb-4">
-            HI, I AM MUHAMMED RINSHID, AI AUTOMATION ENGINEER<br />BASED IN
-            KERALA, INDIA
-          </h2>
-          <p
-            class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto"
-          >
-            Second-year B.Tech Computer Science student, AI Automation Engineer,
-            and technical founder specializing in AI automation systems,
-            workflow engineering, and full-stack web development. I build
-            production-ready software using Next.js, Supabase, Docker, n8n, and
-            LLM APIs.
-          </p>
-          <a
-            class="inline-flex items-center gap-2 mt-8 bg-primary-container text-surface-container-lowest font-label-caps text-label-caps px-8 py-4 rounded-full hover:scale-95 transition-transform duration-300"
-            href="#projects"
-          >
-            EXPLORE WORK
-            <span class="material-symbols-outlined text-sm">arrow_outward</span>
-          </a>
-        </div>
-        <!-- Companies -->
-        <div
-          class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500 mb-24"
+        <p class="font-label-caps text-label-caps text-primary-container mb-3">
+          ABOUT
+        </p>
+        <h2
+          class="font-headline-xl text-headline-xl text-on-surface mb-10 max-w-2xl"
         >
-          <span class="font-display-lg text-headline-md">AZMORA</span>
-          <span class="font-display-lg text-headline-md">COSMIQ</span>
-          <span class="font-display-lg text-headline-md">AIED ACADEMY</span>
-          <span class="font-display-lg text-headline-md">WUSOOL CAPITAL</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div class="relative">
-            <div
-              class="absolute inset-0 border border-primary-container translate-x-4 translate-y-4 rounded-lg z-0"
-            ></div>
-            <img
-              alt="Muhammed Rinshid V P"
-              class="relative z-10 w-full h-auto object-cover rounded-lg"
-              src="images/portrait.png"
-            />
+          Less prototype. More production.
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+          <div
+            class="hover-lift bg-surface rounded-lg border border-white/5 p-6"
+          >
+            <span
+              class="material-symbols-outlined text-primary-container text-2xl mb-3 block"
+              >person</span
+            >
+            <h3
+              class="font-label-caps text-label-caps text-on-surface tracking-widest mb-2"
+            >
+              WHO I AM
+            </h3>
+            <p class="text-sm text-on-surface-variant">
+              A second-year B.Tech CS student, AI automation engineer, and
+              founder — based in Kerala, India, working remote.
+            </p>
           </div>
-          <div>
-            <h3 class="font-headline-xl text-headline-xl text-on-surface mb-6">
-              LET'S GET<br />KNOW ABOUT<br />ME CLOSER
+          <div
+            class="hover-lift bg-surface rounded-lg border border-white/5 p-6"
+          >
+            <span
+              class="material-symbols-outlined text-primary-container text-2xl mb-3 block"
+              >build_circle</span
+            >
+            <h3
+              class="font-label-caps text-label-caps text-on-surface tracking-widest mb-2"
+            >
+              WHAT I BUILD
+            </h3>
+            <p class="text-sm text-on-surface-variant">
+              Production n8n + AWS automation pipelines, and full-stack
+              products with Next.js, React, and Supabase.
+            </p>
+          </div>
+          <div
+            class="hover-lift bg-surface rounded-lg border border-white/5 p-6"
+          >
+            <span
+              class="material-symbols-outlined text-primary-container text-2xl mb-3 block"
+              >diversity_3</span
+            >
+            <h3
+              class="font-label-caps text-label-caps text-on-surface tracking-widest mb-2"
+            >
+              WHO I HELP
+            </h3>
+            <p class="text-sm text-on-surface-variant">
+              Businesses that need manual operations automated, and students
+              who want practical, usable AI skills.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-20">
+          <div class="relative order-2 md:order-1">
+            <h3 class="font-headline-md text-2xl md:text-headline-md text-on-surface mb-4">
+              A little more, in my own words
             </h3>
             <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
-              Founder of CosmIQ, an AI startup delivering automation systems,
-              full-stack software products, and AI education to clients across
-              India and the UK. I currently engineer production n8n workflow
-              infrastructure on AWS for an international client, and mentor 100+
-              students as Chief AI Mentor at AiEd Academy.
+              I founded CosmIQ to bring AI automation and full-stack software
+              to businesses across India and the UK, and I currently
+              engineer production automation infrastructure on AWS for an
+              international client. Outside client work, I've trained 100+
+              students in practical AI literacy — I like building systems
+              about as much as I like teaching people to use them.
             </p>
             <a
-              class="inline-flex items-center justify-center bg-transparent border border-on-surface text-on-surface font-label-caps text-label-caps px-8 py-4 rounded hover:bg-on-surface hover:text-surface-container-lowest transition-colors duration-300"
+              class="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-transparent border border-white/20 text-on-surface font-label-caps text-label-caps px-8 py-4 rounded hover:bg-on-surface hover:text-surface-container-lowest transition-colors duration-300 min-h-[48px]"
               href="Rinshid_CV.html"
               target="_blank"
               rel="noopener"
             >
-              DOWNLOAD CV
+              Download CV
             </a>
+          </div>
+          <div class="relative order-1 md:order-2 max-w-sm mx-auto md:max-w-none">
+            <div
+              class="absolute inset-0 border border-primary-container translate-x-4 translate-y-4 rounded-lg z-0"
+              aria-hidden="true"
+            ></div>
+            <img
+              alt="Portrait of Muhammed Rinshid V P"
+              class="relative z-10 w-full h-auto object-cover rounded-lg aspect-square"
+              src="images/portrait.jpg"
+              width="900"
+              height="900"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <!-- Journey timeline -->
+        <div>
+          <h3 class="font-headline-md text-2xl md:text-headline-md text-on-surface mb-8">
+            The journey so far
+          </h3>
+          <div class="flex flex-col">
+            <div
+              class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary-container text-xl"
+                    >school</span
+                  >
+                </span>
+                <div>
+                  <h4 class="font-headline-md text-base md:text-lg text-on-surface">
+                    TKM College of Engineering
+                  </h4>
+                  <p class="text-sm text-on-surface-variant">
+                    B.Tech Computer Science &amp; Engineering, in progress
+                  </p>
+                </div>
+              </div>
+              <span
+                class="font-label-caps text-label-caps text-on-surface-variant opacity-60 flex-shrink-0"
+                >Expected 2029</span
+              >
+            </div>
+            <div
+              class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary-container text-xl"
+                    >rocket_launch</span
+                  >
+                </span>
+                <div>
+                  <h4 class="font-headline-md text-base md:text-lg text-on-surface">
+                    Founded CosmIQ
+                  </h4>
+                  <p class="text-sm text-on-surface-variant">
+                    AI automation, full-stack products &amp; AI education
+                  </p>
+                </div>
+              </div>
+              <span
+                class="font-label-caps text-label-caps text-on-surface-variant opacity-60 flex-shrink-0"
+                >Oct 2025</span
+              >
+            </div>
+            <div
+              class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary-container text-xl"
+                    >workspace_premium</span
+                  >
+                </span>
+                <div>
+                  <h4 class="font-headline-md text-base md:text-lg text-on-surface">
+                    AI literacy certifications
+                  </h4>
+                  <p class="text-sm text-on-surface-variant">
+                    Intel AI Aware Badge · Classroom of Tomorrow Using AI
+                    (Udemy)
+                  </p>
+                </div>
+              </div>
+              <span
+                class="font-label-caps text-label-caps text-on-surface-variant opacity-60 flex-shrink-0"
+                >2025</span
+              >
+            </div>
+            <div
+              class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary-container text-xl"
+                    >psychology</span
+                  >
+                </span>
+                <div>
+                  <h4 class="font-headline-md text-base md:text-lg text-on-surface">
+                    Advanced AI certifications
+                  </h4>
+                  <p class="text-sm text-on-surface-variant">
+                    AI &amp; Prompt Engineering (IIT Madras) · Claude 101
+                    (Anthropic)
+                  </p>
+                </div>
+              </div>
+              <span
+                class="font-label-caps text-label-caps text-on-surface-variant opacity-60 flex-shrink-0"
+                >2026</span
+              >
+            </div>
+            <div
+              class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary-container text-xl"
+                    >smart_toy</span
+                  >
+                </span>
+                <div>
+                  <h4 class="font-headline-md text-base md:text-lg text-on-surface">
+                    Joined Azmora
+                  </h4>
+                  <p class="text-sm text-on-surface-variant">
+                    AI Automation Engineer — Wusool Capital automation
+                    infrastructure
+                  </p>
+                </div>
+              </div>
+              <span
+                class="inline-flex items-center gap-1.5 font-label-caps text-label-caps text-primary-container flex-shrink-0"
+              >
+                <span
+                  class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"
+                ></span>
+                June 2026 · Present
+              </span>
+            </div>
           </div>
         </div>
       </section>
       <!-- Projects Section -->
       <section
-        class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
+        class="scroll-mt-[84px] md:scroll-mt-[100px] max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
         id="projects"
       >
-        <h2 class="font-headline-xl text-headline-xl text-on-surface mb-12">
-          MY PROJECTS
+        <p class="font-label-caps text-label-caps text-primary-container mb-3">
+          PROJECTS
+        </p>
+        <h2 class="font-headline-xl text-headline-xl text-on-surface mb-4">
+          Featured case studies
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project Card 1 -->
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
+          Six shipped projects, four of them broken down as full case
+          studies below — the problem, the build, and the measurable
+          result.
+        </p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+          <!-- Featured Project 1: CampusTrade -->
           <div
-            class="group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5 hover:border-white/20 transition-colors duration-300"
+            class="hover-lift group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5"
           >
             <div class="aspect-video overflow-hidden">
               <img
-                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                alt="AI Content Factory project preview"
-                src="images/project-1.svg"
-              />
-            </div>
-            <div class="p-6 flex flex-col gap-2 flex-1">
-              <h4
-                class="font-headline-md text-headline-md text-on-surface leading-tight"
-              >
-                AI CONTENT FACTORY
-              </h4>
-              <span
-                class="font-label-caps text-label-caps text-primary-container"
-                >AI AUTOMATION</span
-              >
-              <p class="text-xs text-on-surface-variant opacity-80">
-                React · LangGraph · FastAPI · Groq · Gemini
-              </p>
-              <p class="text-sm text-on-surface-variant mt-1">
-                Multi-agent workflow that researches trends and drafts
-                platform-specific content in under 90 seconds.
-              </p>
-              <div class="flex gap-4 mt-auto pt-4">
-                <span
-                  class="font-label-caps text-label-caps text-on-surface-variant opacity-50 inline-flex items-center gap-1 cursor-default"
-                  >DEMO — COMING SOON</span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project Card 2 -->
-          <div
-            class="group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5 hover:border-white/20 transition-colors duration-300"
-          >
-            <div class="aspect-video overflow-hidden">
-              <img
-                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                alt="Pragathi KEAM Portal project preview"
-                src="images/project-2.svg"
-              />
-            </div>
-            <div class="p-6 flex flex-col gap-2 flex-1">
-              <h4
-                class="font-headline-md text-headline-md text-on-surface leading-tight"
-              >
-                PRAGATHI KEAM PORTAL
-              </h4>
-              <span
-                class="font-label-caps text-label-caps text-primary-container"
-                >EDTECH · DATA</span
-              >
-              <p class="text-xs text-on-surface-variant opacity-80">
-                React · Supabase · PostgreSQL · PapaParse
-              </p>
-              <p class="text-sm text-on-surface-variant mt-1">
-                Official TKMCE Pragathi Help Desk tool predicting colleges from
-                1,500+ rows of KEAM cutoff data.
-              </p>
-              <div class="flex gap-4 mt-auto pt-4">
-                <span
-                  class="font-label-caps text-label-caps text-on-surface-variant opacity-50 inline-flex items-center gap-1 cursor-default"
-                  >LIVE — COMING SOON</span
-                >
-                <a
-                  href="https://github.com/muhammedrinshidvpr-coder/pragathi-keam-portal"
-                  target="_blank"
-                  rel="noopener"
-                  class="font-label-caps text-label-caps text-on-surface inline-flex items-center gap-1 hover:text-primary-container transition-colors"
-                  >GITHUB
-                  <span class="material-symbols-outlined text-sm"
-                    >arrow_outward</span
-                  ></a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project Card 3 -->
-          <div
-            class="group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5 hover:border-white/20 transition-colors duration-300"
-          >
-            <div class="aspect-video overflow-hidden">
-              <img
-                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                alt="CampusTrade project preview"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                alt="CampusTrade project preview graphic"
                 src="images/project-3.svg"
+                width="800"
+                height="450"
+                loading="lazy"
               />
             </div>
-            <div class="p-6 flex flex-col gap-2 flex-1">
-              <h4
-                class="font-headline-md text-headline-md text-on-surface leading-tight"
-              >
-                CAMPUSTRADE
-              </h4>
-              <span
-                class="font-label-caps text-label-caps text-primary-container"
-                >MARKETPLACE</span
-              >
+            <div class="p-6 md:p-8 flex flex-col gap-4 flex-1">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-primary-container"
+                  >MARKETPLACE</span
+                >
+                <h3
+                  class="font-headline-md text-2xl md:text-headline-md text-on-surface leading-tight mt-1"
+                >
+                  CampusTrade
+                </h3>
+              </div>
               <p class="text-xs text-on-surface-variant opacity-80">
-                Next.js · Supabase · PostgreSQL · Vercel
+                Next.js · React · Tailwind CSS · Supabase · PostgreSQL ·
+                Vercel
               </p>
-              <p class="text-sm text-on-surface-variant mt-1">
-                Campus marketplace with WhatsApp deep-linking and client-side
-                image compression.
-              </p>
-              <div class="flex gap-4 mt-auto pt-4">
+              <div class="flex flex-col gap-3 text-sm">
+                <p class="text-on-surface-variant">
+                  <span class="text-on-surface font-semibold">Problem —</span>
+                  TKM students needed a fast, trustworthy way to buy, sell,
+                  and promote services on campus.
+                </p>
+                <p class="text-on-surface-variant">
+                  <span class="text-on-surface font-semibold">Solution —</span>
+                  A marketplace with WhatsApp deep-linking for instant
+                  buyer-seller contact, a custom client-side image
+                  compression pipeline, and strict Row-Level Security across
+                  the database and storage layers.
+                </p>
+              </div>
+              <div
+                class="rounded border border-primary-container/30 bg-primary-container/5 px-4 py-3"
+              >
+                <p class="text-xs font-label-caps text-label-caps text-primary-container mb-1">
+                  IMPACT
+                </p>
+                <p class="text-sm text-on-surface">
+                  5MB image uploads compressed to under 200KB — instant
+                  listings, no server load.
+                </p>
+              </div>
+              <div class="flex gap-4 mt-auto pt-2">
                 <a
                   href="https://campustrade-cosmiq.vercel.app/"
                   target="_blank"
@@ -606,22 +818,232 @@
               </div>
             </div>
           </div>
-          <!-- Project Card 4 -->
+          <!-- Featured Project 2: Pragathi KEAM Portal -->
           <div
-            class="group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5 hover:border-white/20 transition-colors duration-300"
+            class="hover-lift group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5"
           >
             <div class="aspect-video overflow-hidden">
               <img
-                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                alt="CosmIQ Sync project preview"
-                src="images/project-4.svg"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                alt="Pragathi KEAM Portal project preview graphic"
+                src="images/project-2.svg"
+                width="800"
+                height="450"
+                loading="lazy"
               />
             </div>
-            <div class="p-6 flex flex-col gap-2 flex-1">
-              <h4
-                class="font-headline-md text-headline-md text-on-surface leading-tight"
+            <div class="p-6 md:p-8 flex flex-col gap-4 flex-1">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-primary-container"
+                  >EDTECH · DATA</span
+                >
+                <h3
+                  class="font-headline-md text-2xl md:text-headline-md text-on-surface leading-tight mt-1"
+                >
+                  Pragathi KEAM Portal
+                </h3>
+              </div>
+              <p class="text-xs text-on-surface-variant opacity-80">
+                React · Supabase · PostgreSQL · PapaParse
+              </p>
+              <div class="flex flex-col gap-3 text-sm">
+                <p class="text-on-surface-variant">
+                  <span class="text-on-surface font-semibold">Problem —</span>
+                  Engineering aspirants had no fast way to check real college
+                  eligibility across 1,500+ rows of historical KEAM cutoff
+                  data.
+                </p>
+                <p class="text-on-surface-variant">
+                  <span class="text-on-surface font-semibold">Solution —</span>
+                  A dynamic predictor with instant filtering by rank,
+                  category, and branch, a secure RLS-protected admin
+                  dashboard, and a custom PapaParse pipeline for bulk CSV
+                  ingestion.
+                </p>
+              </div>
+              <div
+                class="rounded border border-primary-container/30 bg-primary-container/5 px-4 py-3"
               >
-                COSMIQ SYNC
+                <p class="text-xs font-label-caps text-label-caps text-primary-container mb-1">
+                  IMPACT
+                </p>
+                <p class="text-sm text-on-surface">
+                  Adopted as the official tool for the TKMCE Pragathi Help
+                  Desk, 2026.
+                </p>
+              </div>
+              <div class="flex gap-4 mt-auto pt-2">
+                <span
+                  class="coming-soon font-label-caps text-label-caps text-on-surface-variant inline-flex items-center gap-1"
+                  >LIVE — COMING SOON</span
+                >
+                <a
+                  href="https://github.com/muhammedrinshidvpr-coder/pragathi-keam-portal"
+                  target="_blank"
+                  rel="noopener"
+                  class="font-label-caps text-label-caps text-on-surface inline-flex items-center gap-1 hover:text-primary-container transition-colors"
+                  >GITHUB
+                  <span class="material-symbols-outlined text-sm"
+                    >arrow_outward</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Featured Project 3: AI SDR & Meeting Intelligence -->
+          <div
+            class="hover-lift group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5"
+          >
+            <div class="aspect-video overflow-hidden">
+              <img
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                alt="Autonomous AI SDR and Meeting Intelligence Pipeline project preview graphic"
+                src="images/project-5.svg"
+                width="800"
+                height="450"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-6 md:p-8 flex flex-col gap-4 flex-1">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-primary-container"
+                  >AI AUTOMATION</span
+                >
+                <h3
+                  class="font-headline-md text-2xl md:text-headline-md text-on-surface leading-tight mt-1"
+                >
+                  AI SDR &amp; Meeting Intelligence
+                </h3>
+              </div>
+              <p class="text-xs text-on-surface-variant opacity-80">
+                n8n · Docker · Gemini 1.5 Pro
+              </p>
+              <div class="flex flex-col gap-3 text-sm">
+                <p class="text-on-surface-variant">
+                  <span class="text-on-surface font-semibold">Problem —</span>
+                  Manual outbound research, CRM updates, cold outreach, and
+                  meeting note-taking were consuming hours every week.
+                </p>
+                <p class="text-on-surface-variant">
+                  <span class="text-on-surface font-semibold">Solution —</span>
+                  A self-hosted pipeline on Docker — n8n orchestrating
+                  company research, web scraping, CRM sync, and cold-email
+                  generation, with Gemini 1.5 Pro parsing meeting notes into
+                  structured data.
+                </p>
+              </div>
+              <div
+                class="rounded border border-primary-container/30 bg-primary-container/5 px-4 py-3"
+              >
+                <p class="text-xs font-label-caps text-label-caps text-primary-container mb-1">
+                  IMPACT
+                </p>
+                <p class="text-sm text-on-surface">
+                  ~90% faster lead processing · 95%-accurate meeting-note
+                  parsing.
+                </p>
+              </div>
+              <div class="flex gap-4 mt-auto pt-2">
+                <a
+                  href="https://github.com/muhammedrinshidvpr-coder/ai-meeting-architect"
+                  target="_blank"
+                  rel="noopener"
+                  class="font-label-caps text-label-caps text-on-surface inline-flex items-center gap-1 hover:text-primary-container transition-colors"
+                  >GITHUB
+                  <span class="material-symbols-outlined text-sm"
+                    >arrow_outward</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Featured Project 4: AI Content Factory -->
+          <div
+            class="hover-lift group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5"
+          >
+            <div class="aspect-video overflow-hidden">
+              <img
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                alt="AI Content Factory project preview graphic"
+                src="images/project-1.svg"
+                width="800"
+                height="450"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-6 md:p-8 flex flex-col gap-4 flex-1">
+              <div>
+                <span
+                  class="font-label-caps text-label-caps text-primary-container"
+                  >AI AUTOMATION</span
+                >
+                <h3
+                  class="font-headline-md text-2xl md:text-headline-md text-on-surface leading-tight mt-1"
+                >
+                  AI Content Factory
+                </h3>
+              </div>
+              <p class="text-xs text-on-surface-variant opacity-80">
+                React · LangGraph · FastAPI · Groq · Gemini
+              </p>
+              <div class="flex flex-col gap-3 text-sm">
+                <p class="text-on-surface-variant">
+                  <span class="text-on-surface font-semibold">Problem —</span>
+                  Producing platform-specific content for LinkedIn, YouTube,
+                  and Reels manually took hours per piece.
+                </p>
+                <p class="text-on-surface-variant">
+                  <span class="text-on-surface font-semibold">Solution —</span>
+                  A multi-agent LangGraph pipeline that researches trends,
+                  then drafts, edits, and formats content per platform, with
+                  an iterative feedback loop before publishing.
+                </p>
+              </div>
+              <div
+                class="rounded border border-primary-container/30 bg-primary-container/5 px-4 py-3"
+              >
+                <p class="text-xs font-label-caps text-label-caps text-primary-container mb-1">
+                  IMPACT
+                </p>
+                <p class="text-sm text-on-surface">
+                  Content drafting time cut from hours to under 90 seconds.
+                </p>
+              </div>
+              <div class="flex gap-4 mt-auto pt-2">
+                <span
+                  class="coming-soon font-label-caps text-label-caps text-on-surface-variant inline-flex items-center gap-1"
+                  >DEMO — COMING SOON</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- More Projects -->
+        <h3 class="font-headline-md text-2xl md:text-headline-md text-on-surface mb-6 mt-16">
+          More projects
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- More Project 1: CosmIQ Sync -->
+          <div
+            class="hover-lift group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5"
+          >
+            <div class="aspect-video overflow-hidden">
+              <img
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                alt="CosmIQ Sync project preview graphic"
+                src="images/project-4.svg"
+                width="800"
+                height="450"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-6 md:p-8 flex flex-col gap-2 flex-1">
+              <h4
+                class="font-headline-md text-2xl md:text-headline-md text-on-surface leading-tight"
+              >
+                CosmIQ Sync
               </h4>
               <span
                 class="font-label-caps text-label-caps text-primary-container"
@@ -631,8 +1053,9 @@
                 React · TypeScript · Supabase · Vercel
               </p>
               <p class="text-sm text-on-surface-variant mt-1">
-                Zero-login workspace for real-time file/code transfer via
-                5-digit session keys.
+                Zero-login workspace for real-time file and code transfer via
+                5-digit session keys, with scheduled pg_cron cleanup
+                auto-deleting sessions after 24 hours.
               </p>
               <div class="flex gap-4 mt-auto pt-4">
                 <a
@@ -658,64 +1081,25 @@
               </div>
             </div>
           </div>
-          <!-- Project Card 5 -->
+          <!-- More Project 2: RentVibe -->
           <div
-            class="group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5 hover:border-white/20 transition-colors duration-300"
+            class="hover-lift group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5"
           >
             <div class="aspect-video overflow-hidden">
               <img
-                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                alt="Autonomous AI SDR and Meeting Intelligence Pipeline project preview"
-                src="images/project-5.svg"
-              />
-            </div>
-            <div class="p-6 flex flex-col gap-2 flex-1">
-              <h4
-                class="font-headline-md text-headline-md text-on-surface leading-tight"
-              >
-                AI SDR &amp; MEETING INTELLIGENCE
-              </h4>
-              <span
-                class="font-label-caps text-label-caps text-primary-container"
-                >AI AUTOMATION</span
-              >
-              <p class="text-xs text-on-surface-variant opacity-80">
-                n8n · Docker · Gemini 1.5 Pro
-              </p>
-              <p class="text-sm text-on-surface-variant mt-1">
-                Self-hosted outbound sales pipeline — 90% faster lead
-                processing, 95% accurate meeting parsing.
-              </p>
-              <div class="flex gap-4 mt-auto pt-4">
-                <a
-                  href="https://github.com/muhammedrinshidvpr-coder/ai-meeting-architect"
-                  target="_blank"
-                  rel="noopener"
-                  class="font-label-caps text-label-caps text-on-surface inline-flex items-center gap-1 hover:text-primary-container transition-colors"
-                  >GITHUB
-                  <span class="material-symbols-outlined text-sm"
-                    >arrow_outward</span
-                  ></a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project Card 6 -->
-          <div
-            class="group flex flex-col bg-surface rounded-lg overflow-hidden border border-white/5 hover:border-white/20 transition-colors duration-300"
-          >
-            <div class="aspect-video overflow-hidden">
-              <img
-                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                alt="RentVibe project preview"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                alt="RentVibe project preview graphic"
                 src="images/project-6.svg"
+                width="800"
+                height="450"
+                loading="lazy"
               />
             </div>
-            <div class="p-6 flex flex-col gap-2 flex-1">
+            <div class="p-6 md:p-8 flex flex-col gap-2 flex-1">
               <h4
-                class="font-headline-md text-headline-md text-on-surface leading-tight"
+                class="font-headline-md text-2xl md:text-headline-md text-on-surface leading-tight"
               >
-                RENTVIBE
+                RentVibe
               </h4>
               <span
                 class="font-label-caps text-label-caps text-primary-container"
@@ -726,7 +1110,8 @@
               </p>
               <p class="text-sm text-on-surface-variant mt-1">
                 Rental &amp; sales platform connecting local businesses with
-                consumers.
+                consumers, with an admin-curated inventory quality-control
+                workflow.
               </p>
               <div class="flex gap-4 mt-auto pt-4">
                 <a
@@ -756,14 +1141,14 @@
       </section>
       <!-- What I Do & Experience Split Section -->
       <section
-        class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
+        class="scroll-mt-[84px] md:scroll-mt-[100px] max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
         id="experience"
       >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <!-- What I Do -->
           <div>
             <h2 class="font-headline-xl text-headline-xl text-on-surface mb-12">
-              WHAT I DO
+              What I do
             </h2>
             <div class="flex flex-col">
               <div
@@ -779,15 +1164,16 @@
                     >
                   </span>
                   <h4
-                    class="font-headline-md text-headline-md text-on-surface group-hover:text-primary-container transition-colors"
+                    class="font-headline-md text-lg md:text-headline-md text-on-surface group-hover:text-primary-container transition-colors"
                   >
-                    AI AUTOMATION &amp; WORKFLOWS
+                    AI Automation &amp; Workflows
                   </h4>
                 </div>
                 <div class="flex items-center gap-4 text-on-surface-variant">
                   <p class="text-sm max-w-xs hidden md:block">
-                    Production n8n workflows, LLM integrations, and AWS-deployed
-                    automation pipelines for business operations.
+                    Production n8n workflows, LLM integrations, and
+                    AWS-deployed automation pipelines for business
+                    operations.
                   </p>
                   <span
                     class="material-symbols-outlined group-hover:text-primary-container transition-colors"
@@ -808,9 +1194,9 @@
                     >
                   </span>
                   <h4
-                    class="font-headline-md text-headline-md text-on-surface group-hover:text-primary-container transition-colors"
+                    class="font-headline-md text-lg md:text-headline-md text-on-surface group-hover:text-primary-container transition-colors"
                   >
-                    FULL-STACK DEVELOPMENT
+                    Full-Stack Development
                   </h4>
                 </div>
                 <div class="flex items-center gap-4 text-on-surface-variant">
@@ -837,9 +1223,9 @@
                     >
                   </span>
                   <h4
-                    class="font-headline-md text-headline-md text-on-surface group-hover:text-primary-container transition-colors"
+                    class="font-headline-md text-lg md:text-headline-md text-on-surface group-hover:text-primary-container transition-colors"
                   >
-                    AI CONSULTING &amp; TRAINING
+                    AI Consulting &amp; Training
                   </h4>
                 </div>
                 <div class="flex items-center gap-4 text-on-surface-variant">
@@ -858,11 +1244,11 @@
           <!-- Experience -->
           <div>
             <h2 class="font-headline-xl text-headline-xl text-on-surface mb-12">
-              EXPERIENCE
+              Experience
             </h2>
             <div class="flex flex-col">
               <div
-                class="flex justify-between items-center gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+                class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
               >
                 <div class="flex items-center gap-4">
                   <span
@@ -873,11 +1259,11 @@
                       >smart_toy</span
                     >
                   </span>
-                  <h4 class="font-headline-md text-headline-md text-on-surface">
-                    AZMORA
+                  <h4 class="font-headline-md text-lg md:text-headline-md text-on-surface">
+                    Azmora
                   </h4>
                 </div>
-                <div class="text-right flex-shrink-0">
+                <div class="sm:text-right flex-shrink-0">
                   <p class="font-body-md text-body-md text-on-surface-variant">
                     AI Automation Engineer
                   </p>
@@ -892,7 +1278,7 @@
                 </div>
               </div>
               <div
-                class="flex justify-between items-center gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+                class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
               >
                 <div class="flex items-center gap-4">
                   <span
@@ -903,39 +1289,13 @@
                       >rocket_launch</span
                     >
                   </span>
-                  <h4 class="font-headline-md text-headline-md text-on-surface">
-                    COSMIQ
+                  <h4 class="font-headline-md text-lg md:text-headline-md text-on-surface">
+                    CosmIQ
                   </h4>
                 </div>
-                <div class="text-right flex-shrink-0">
+                <div class="sm:text-right flex-shrink-0">
                   <p class="font-body-md text-body-md text-on-surface-variant">
                     Founder &amp; CEO
-                  </p>
-                  <span
-                    class="font-label-caps text-label-caps text-on-surface-variant opacity-60"
-                    >Since 2025</span
-                  >
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
-              >
-                <div class="flex items-center gap-4">
-                  <span
-                    class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
-                  >
-                    <span
-                      class="material-symbols-outlined text-primary-container text-xl"
-                      >co_present</span
-                    >
-                  </span>
-                  <h4 class="font-headline-md text-headline-md text-on-surface">
-                    AIED ACADEMY
-                  </h4>
-                </div>
-                <div class="text-right flex-shrink-0">
-                  <p class="font-body-md text-body-md text-on-surface-variant">
-                    Chief AI Mentor
                   </p>
                   <span
                     class="font-label-caps text-label-caps text-on-surface-variant opacity-60"
@@ -949,290 +1309,290 @@
       </section>
       <!-- Skills Section -->
       <section
-        class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
+        class="scroll-mt-[84px] md:scroll-mt-[100px] max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
         id="skills"
       >
-        <h2 class="font-headline-xl text-headline-xl text-on-surface mb-12">
+        <p class="font-label-caps text-label-caps text-primary-container mb-3">
           SKILLS
+        </p>
+        <h2 class="font-headline-xl text-headline-xl text-on-surface mb-12">
+          The stack I build with
         </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <!-- AI / Automation (featured) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- AI and Automation -->
           <div
-            class="relative overflow-hidden bg-surface rounded-lg border border-white/5 hover:border-white/20 transition-colors duration-300 p-8 lg:col-span-2"
+            class="hover-lift relative overflow-hidden bg-surface rounded-lg border border-white/5 p-6 md:p-8"
           >
             <span
               aria-hidden="true"
-              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[120px] text-white/5 leading-none"
+              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[110px] text-white/5 leading-none"
               >01</span
             >
-            <div class="relative z-10 flex items-center justify-between mb-6">
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary-container text-xl"
-                    >auto_awesome</span
-                  >
-                </span>
-                <h3
-                  class="font-label-caps text-label-caps text-on-surface tracking-widest"
-                >
-                  AI / AUTOMATION
-                </h3>
-              </div>
+            <div class="relative z-10 flex items-center gap-3 mb-6">
               <span
-                class="font-label-caps text-label-caps text-on-surface-variant opacity-40"
-                >01</span
+                class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
               >
+                <span
+                  class="material-symbols-outlined text-primary-container text-xl"
+                  >auto_awesome</span
+                >
+              </span>
+              <h3
+                class="font-label-caps text-label-caps text-on-surface tracking-widest"
+              >
+                AI AND AUTOMATION
+              </h3>
             </div>
             <div class="relative z-10 flex flex-wrap gap-2">
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >Prompt Engineering</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >LLM Orchestration</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >n8n</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >AI Agent Systems</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >Google Gemini API</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >AI Workflows</span
               >
             </div>
           </div>
           <!-- Frontend -->
           <div
-            class="relative overflow-hidden bg-surface rounded-lg border border-white/5 hover:border-white/20 transition-colors duration-300 p-8"
+            class="hover-lift relative overflow-hidden bg-surface rounded-lg border border-white/5 p-6 md:p-8"
           >
             <span
               aria-hidden="true"
-              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[120px] text-white/5 leading-none"
+              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[110px] text-white/5 leading-none"
               >02</span
             >
-            <div class="relative z-10 flex items-center justify-between mb-6">
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary-container text-xl"
-                    >code</span
-                  >
-                </span>
-                <h3
-                  class="font-label-caps text-label-caps text-on-surface tracking-widest"
-                >
-                  FRONTEND
-                </h3>
-              </div>
+            <div class="relative z-10 flex items-center gap-3 mb-6">
               <span
-                class="font-label-caps text-label-caps text-on-surface-variant opacity-40"
-                >02</span
+                class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
               >
+                <span
+                  class="material-symbols-outlined text-primary-container text-xl"
+                  >code</span
+                >
+              </span>
+              <h3
+                class="font-label-caps text-label-caps text-on-surface tracking-widest"
+              >
+                FRONTEND
+              </h3>
             </div>
             <div class="relative z-10 flex flex-wrap gap-2">
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >React</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >Next.js</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >TypeScript</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
+                >JavaScript</span
+              >
+              <span
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >Tailwind CSS</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >Framer Motion</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >shadcn/ui</span
               >
             </div>
           </div>
-          <!-- Backend / Infra -->
+          <!-- Backend -->
           <div
-            class="relative overflow-hidden bg-surface rounded-lg border border-white/5 hover:border-white/20 transition-colors duration-300 p-8"
+            class="hover-lift relative overflow-hidden bg-surface rounded-lg border border-white/5 p-6 md:p-8"
           >
             <span
               aria-hidden="true"
-              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[120px] text-white/5 leading-none"
+              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[110px] text-white/5 leading-none"
               >03</span
             >
-            <div class="relative z-10 flex items-center justify-between mb-6">
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary-container text-xl"
-                    >dns</span
-                  >
-                </span>
-                <h3
-                  class="font-label-caps text-label-caps text-on-surface tracking-widest"
-                >
-                  BACKEND / INFRA
-                </h3>
-              </div>
+            <div class="relative z-10 flex items-center gap-3 mb-6">
               <span
-                class="font-label-caps text-label-caps text-on-surface-variant opacity-40"
-                >03</span
+                class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
               >
+                <span
+                  class="material-symbols-outlined text-primary-container text-xl"
+                  >dns</span
+                >
+              </span>
+              <h3
+                class="font-label-caps text-label-caps text-on-surface tracking-widest"
+              >
+                BACKEND
+              </h3>
             </div>
             <div class="relative z-10 flex flex-wrap gap-2">
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
-                >AWS</span
-              >
-              <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
-                >Supabase</span
-              >
-              <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
-                >PostgreSQL</span
-              >
-              <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
-                >Docker</span
-              >
-              <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
-                >CI/CD Pipelines</span
-              >
-              <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
-                >RLS Policies</span
-              >
-              <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >REST APIs</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
-                >Vercel</span
-              >
-              <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >pg_cron</span
               >
-            </div>
-          </div>
-          <!-- Languages -->
-          <div
-            class="relative overflow-hidden bg-surface rounded-lg border border-white/5 hover:border-white/20 transition-colors duration-300 p-8"
-          >
-            <span
-              aria-hidden="true"
-              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[120px] text-white/5 leading-none"
-              >04</span
-            >
-            <div class="relative z-10 flex items-center justify-between mb-6">
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary-container text-xl"
-                    >terminal</span
-                  >
-                </span>
-                <h3
-                  class="font-label-caps text-label-caps text-on-surface tracking-widest"
-                >
-                  LANGUAGES
-                </h3>
-              </div>
               <span
-                class="font-label-caps text-label-caps text-on-surface-variant opacity-40"
-                >04</span
-              >
-            </div>
-            <div class="relative z-10 flex flex-wrap gap-2">
-              <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
-                >JavaScript</span
-              >
-              <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >Python</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >C</span
+              >
+            </div>
+          </div>
+          <!-- Databases -->
+          <div
+            class="hover-lift relative overflow-hidden bg-surface rounded-lg border border-white/5 p-6 md:p-8"
+          >
+            <span
+              aria-hidden="true"
+              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[110px] text-white/5 leading-none"
+              >04</span
+            >
+            <div class="relative z-10 flex items-center gap-3 mb-6">
+              <span
+                class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-container text-xl"
+                  >database</span
+                >
+              </span>
+              <h3
+                class="font-label-caps text-label-caps text-on-surface tracking-widest"
+              >
+                DATABASES
+              </h3>
+            </div>
+            <div class="relative z-10 flex flex-wrap gap-2">
+              <span
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
+                >Supabase</span
+              >
+              <span
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
+                >PostgreSQL</span
+              >
+              <span
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
+                >RLS Policies</span
+              >
+            </div>
+          </div>
+          <!-- Cloud -->
+          <div
+            class="hover-lift relative overflow-hidden bg-surface rounded-lg border border-white/5 p-6 md:p-8"
+          >
+            <span
+              aria-hidden="true"
+              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[110px] text-white/5 leading-none"
+              >05</span
+            >
+            <div class="relative z-10 flex items-center gap-3 mb-6">
+              <span
+                class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-container text-xl"
+                  >cloud</span
+                >
+              </span>
+              <h3
+                class="font-label-caps text-label-caps text-on-surface tracking-widest"
+              >
+                CLOUD
+              </h3>
+            </div>
+            <div class="relative z-10 flex flex-wrap gap-2">
+              <span
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
+                >AWS</span
+              >
+              <span
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
+                >Docker</span
+              >
+              <span
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
+                >CI/CD Pipelines</span
+              >
+              <span
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
+                >Vercel</span
               >
             </div>
           </div>
           <!-- Tools -->
           <div
-            class="relative overflow-hidden bg-surface rounded-lg border border-white/5 hover:border-white/20 transition-colors duration-300 p-8"
+            class="hover-lift relative overflow-hidden bg-surface rounded-lg border border-white/5 p-6 md:p-8"
           >
             <span
               aria-hidden="true"
-              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[120px] text-white/5 leading-none"
-              >05</span
+              class="pointer-events-none select-none absolute -top-6 right-4 font-display-lg text-[110px] text-white/5 leading-none"
+              >06</span
             >
-            <div class="relative z-10 flex items-center justify-between mb-6">
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary-container text-xl"
-                    >construction</span
-                  >
-                </span>
-                <h3
-                  class="font-label-caps text-label-caps text-on-surface tracking-widest"
-                >
-                  TOOLS
-                </h3>
-              </div>
+            <div class="relative z-10 flex items-center gap-3 mb-6">
               <span
-                class="font-label-caps text-label-caps text-on-surface-variant opacity-40"
-                >05</span
+                class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
               >
+                <span
+                  class="material-symbols-outlined text-primary-container text-xl"
+                  >construction</span
+                >
+              </span>
+              <h3
+                class="font-label-caps text-label-caps text-on-surface tracking-widest"
+              >
+                TOOLS
+              </h3>
             </div>
             <div class="relative z-10 flex flex-wrap gap-2">
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >Git</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >GitHub</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >Figma</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >PapaParse</span
               >
               <span
-                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container hover:-translate-y-0.5 transition-all duration-300"
+                class="bg-surface-container-high/60 border border-white/10 rounded px-3 py-1.5 text-xs text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-colors duration-300"
                 >SMTP Automation</span
               >
             </div>
@@ -1241,18 +1601,18 @@
       </section>
       <!-- Education & Certifications Section -->
       <section
-        class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
+        class="scroll-mt-[84px] md:scroll-mt-[100px] max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
         id="education"
       >
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           <!-- Education -->
           <div>
             <h2 class="font-headline-xl text-headline-xl text-on-surface mb-12">
-              EDUCATION
+              Education
             </h2>
             <div class="flex flex-col">
               <div
-                class="flex justify-between items-center gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+                class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
               >
                 <div class="flex items-center gap-4">
                   <span
@@ -1263,11 +1623,11 @@
                       >school</span
                     >
                   </span>
-                  <h4 class="font-headline-md text-headline-md text-on-surface">
-                    TKM COLLEGE OF ENGINEERING
+                  <h4 class="font-headline-md text-lg md:text-headline-md text-on-surface">
+                    TKM College of Engineering
                   </h4>
                 </div>
-                <div class="text-right flex-shrink-0">
+                <div class="sm:text-right flex-shrink-0">
                   <p class="font-body-md text-body-md text-on-surface-variant">
                     B.Tech — CS &amp; Engineering
                   </p>
@@ -1278,7 +1638,7 @@
                 </div>
               </div>
               <div
-                class="flex justify-between items-center gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+                class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
               >
                 <div class="flex items-center gap-4">
                   <span
@@ -1289,11 +1649,11 @@
                       >history_edu</span
                     >
                   </span>
-                  <h4 class="font-headline-md text-headline-md text-on-surface">
-                    MARKAZ CHSS
+                  <h4 class="font-headline-md text-lg md:text-headline-md text-on-surface">
+                    Markaz CHSS
                   </h4>
                 </div>
-                <div class="text-right flex-shrink-0">
+                <div class="sm:text-right flex-shrink-0">
                   <p class="font-body-md text-body-md text-on-surface-variant">
                     Higher Secondary (Science)
                   </p>
@@ -1304,158 +1664,287 @@
           <!-- Certifications -->
           <div>
             <h2 class="font-headline-xl text-headline-xl text-on-surface mb-12">
-              CERTIFICATIONS
+              Certifications
             </h2>
-            <div class="flex flex-col">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
-                class="flex justify-between items-center gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+                class="hover-lift bg-surface rounded-lg border border-white/5 p-5"
               >
-                <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 mb-3"
+                >
                   <span
-                    class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+                    class="material-symbols-outlined text-primary-container text-xl"
+                    >workspace_premium</span
                   >
-                    <span
-                      class="material-symbols-outlined text-primary-container text-xl"
-                      >workspace_premium</span
-                    >
-                  </span>
-                  <h4 class="font-headline-md text-headline-md text-on-surface">
-                    AI &amp; PROMPT ENGINEERING
-                  </h4>
-                </div>
-                <div class="text-right flex-shrink-0">
-                  <p class="font-body-md text-body-md text-on-surface-variant">
-                    IIT Madras
-                  </p>
-                  <span
-                    class="font-label-caps text-label-caps text-on-surface-variant opacity-60"
-                    >2026</span
-                  >
-                </div>
+                </span>
+                <h4 class="font-headline-md text-base text-on-surface leading-tight mb-1">
+                  AI &amp; Prompt Engineering
+                </h4>
+                <p class="text-xs text-on-surface-variant">IIT Madras · 2026</p>
               </div>
               <div
-                class="flex justify-between items-center gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+                class="hover-lift bg-surface rounded-lg border border-white/5 p-5"
               >
-                <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 mb-3"
+                >
                   <span
-                    class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+                    class="material-symbols-outlined text-primary-container text-xl"
+                    >psychology</span
                   >
-                    <span
-                      class="material-symbols-outlined text-primary-container text-xl"
-                      >psychology</span
-                    >
-                  </span>
-                  <h4 class="font-headline-md text-headline-md text-on-surface">
-                    CLAUDE 101
-                  </h4>
-                </div>
-                <div class="text-right flex-shrink-0">
-                  <p class="font-body-md text-body-md text-on-surface-variant">
-                    Anthropic
-                  </p>
-                  <span
-                    class="font-label-caps text-label-caps text-on-surface-variant opacity-60"
-                    >2026</span
-                  >
-                </div>
+                </span>
+                <h4 class="font-headline-md text-base text-on-surface leading-tight mb-1">
+                  Claude 101
+                </h4>
+                <p class="text-xs text-on-surface-variant">Anthropic · 2026</p>
               </div>
               <div
-                class="flex justify-between items-center gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+                class="hover-lift bg-surface rounded-lg border border-white/5 p-5"
               >
-                <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 mb-3"
+                >
                   <span
-                    class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+                    class="material-symbols-outlined text-primary-container text-xl"
+                    >auto_stories</span
                   >
-                    <span
-                      class="material-symbols-outlined text-primary-container text-xl"
-                      >auto_stories</span
-                    >
-                  </span>
-                  <h4 class="font-headline-md text-headline-md text-on-surface">
-                    CLASSROOM OF TOMORROW USING AI
-                  </h4>
-                </div>
-                <div class="text-right flex-shrink-0">
-                  <p class="font-body-md text-body-md text-on-surface-variant">
-                    Udemy
-                  </p>
-                  <span
-                    class="font-label-caps text-label-caps text-on-surface-variant opacity-60"
-                    >2025</span
-                  >
-                </div>
+                </span>
+                <h4 class="font-headline-md text-base text-on-surface leading-tight mb-1">
+                  Classroom of Tomorrow Using AI
+                </h4>
+                <p class="text-xs text-on-surface-variant">Udemy · 2025</p>
               </div>
               <div
-                class="flex justify-between items-center gap-4 py-6 divider hover:bg-surface transition-colors duration-300 px-4 -mx-4"
+                class="hover-lift bg-surface rounded-lg border border-white/5 p-5"
               >
-                <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 mb-3"
+                >
                   <span
-                    class="flex items-center justify-center w-10 h-10 rounded bg-primary-container/10 flex-shrink-0"
+                    class="material-symbols-outlined text-primary-container text-xl"
+                    >military_tech</span
                   >
-                    <span
-                      class="material-symbols-outlined text-primary-container text-xl"
-                      >military_tech</span
-                    >
-                  </span>
-                  <h4 class="font-headline-md text-headline-md text-on-surface">
-                    INTEL AI AWARE BADGE
-                  </h4>
-                </div>
-                <div class="text-right flex-shrink-0">
-                  <p class="font-body-md text-body-md text-on-surface-variant">
-                    Intel
-                  </p>
-                  <span
-                    class="font-label-caps text-label-caps text-on-surface-variant opacity-60"
-                    >2025</span
-                  >
-                </div>
+                </span>
+                <h4 class="font-headline-md text-base text-on-surface leading-tight mb-1">
+                  Intel AI Aware Badge
+                </h4>
+                <p class="text-xs text-on-surface-variant">Intel · 2025</p>
               </div>
             </div>
+          </div>
+        </div>
+        <!-- GitHub proof of work strip -->
+        <div>
+          <p class="font-label-caps text-label-caps text-primary-container mb-3">
+            PROOF OF WORK
+          </p>
+          <div class="flex items-baseline justify-between flex-wrap gap-4 mb-8">
+            <h2 class="font-headline-xl text-headline-xl text-on-surface">
+              Open on GitHub
+            </h2>
+            <a
+              href="https://github.com/muhammedrinshidvpr-coder"
+              target="_blank"
+              rel="noopener"
+              class="font-label-caps text-label-caps text-on-surface inline-flex items-center gap-1 hover:text-primary-container transition-colors"
+              >SEE ALL REPOS
+              <span class="material-symbols-outlined text-sm">arrow_outward</span></a
+            >
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a
+              href="https://github.com/muhammedrinshidvpr-coder/campus-trade-v2"
+              target="_blank"
+              rel="noopener"
+              class="hover-lift block bg-surface rounded-lg border border-white/5 p-5"
+            >
+              <span class="material-symbols-outlined text-primary-container text-xl mb-3 block"
+                >folder_code</span
+              >
+              <h4 class="font-headline-md text-sm text-on-surface mb-1">
+                campus-trade-v2
+              </h4>
+              <p class="text-xs text-on-surface-variant">
+                Campus marketplace with WhatsApp deep-linking
+              </p>
+            </a>
+            <a
+              href="https://github.com/muhammedrinshidvpr-coder/pragathi-keam-portal"
+              target="_blank"
+              rel="noopener"
+              class="hover-lift block bg-surface rounded-lg border border-white/5 p-5"
+            >
+              <span class="material-symbols-outlined text-primary-container text-xl mb-3 block"
+                >folder_code</span
+              >
+              <h4 class="font-headline-md text-sm text-on-surface mb-1">
+                pragathi-keam-portal
+              </h4>
+              <p class="text-xs text-on-surface-variant">
+                Official TKMCE KEAM college predictor
+              </p>
+            </a>
+            <a
+              href="https://github.com/muhammedrinshidvpr-coder/cosmiq-sync"
+              target="_blank"
+              rel="noopener"
+              class="hover-lift block bg-surface rounded-lg border border-white/5 p-5"
+            >
+              <span class="material-symbols-outlined text-primary-container text-xl mb-3 block"
+                >folder_code</span
+              >
+              <h4 class="font-headline-md text-sm text-on-surface mb-1">
+                cosmiq-sync
+              </h4>
+              <p class="text-xs text-on-surface-variant">
+                Zero-login real-time file &amp; code transfer
+              </p>
+            </a>
+            <a
+              href="https://github.com/muhammedrinshidvpr-coder/ai-meeting-architect"
+              target="_blank"
+              rel="noopener"
+              class="hover-lift block bg-surface rounded-lg border border-white/5 p-5"
+            >
+              <span class="material-symbols-outlined text-primary-container text-xl mb-3 block"
+                >folder_code</span
+              >
+              <h4 class="font-headline-md text-sm text-on-surface mb-1">
+                ai-meeting-architect
+              </h4>
+              <p class="text-xs text-on-surface-variant">
+                Self-hosted AI SDR &amp; meeting intelligence pipeline
+              </p>
+            </a>
           </div>
         </div>
       </section>
       <!-- Contact Section -->
       <section
-        class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
+        class="scroll-mt-[84px] md:scroll-mt-[100px] max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop border-t border-white/10"
         id="contact"
       >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
+            <p class="font-label-caps text-label-caps text-primary-container mb-3">
+              CONTACT
+            </p>
             <h2 class="font-headline-xl text-headline-xl text-on-surface mb-6">
-              LET'S WORK<br />TOGETHER
+              Let's work together
             </h2>
             <p
-              class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-md"
+              class="font-body-lg text-body-lg text-on-surface-variant mb-4 max-w-md"
             >
               Have a project in mind or just want to say hello? Fill out the
-              form and I'll get back to you.
+              form, or reach me directly below.
             </p>
-            <p class="font-label-caps text-label-caps text-on-surface-variant">
-              EMAIL
-            </p>
-            <p class="font-body-lg text-body-lg text-on-surface mb-6">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-surface px-4 py-2 mb-8"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-primary-container animate-pulse flex-shrink-0"
+              ></span>
+              <span class="font-label-caps text-label-caps text-on-surface-variant"
+                >Open to freelance &amp; consulting work</span
+              >
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a
                 href="mailto:muhammedrinshidvpr@gmail.com"
-                class="hover:text-primary-container transition-colors"
-                >muhammedrinshidvpr@gmail.com</a
+                class="hover-lift flex items-center gap-3 bg-surface rounded-lg border border-white/5 p-4 min-h-[64px]"
               >
-            </p>
-            <p class="font-label-caps text-label-caps text-on-surface-variant">
-              PHONE
-            </p>
-            <p class="font-body-lg text-body-lg text-on-surface mb-6">
+                <span
+                  class="flex items-center justify-center w-11 h-11 rounded bg-primary-container/10 flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined text-primary-container"
+                    >mail</span
+                  >
+                </span>
+                <div class="min-w-0">
+                  <p class="font-label-caps text-label-caps text-on-surface-variant opacity-70">
+                    EMAIL
+                  </p>
+                  <p class="text-sm text-on-surface truncate">
+                    muhammedrinshidvpr@gmail.com
+                  </p>
+                </div>
+              </a>
               <a
-                href="tel:+917594827429"
-                class="hover:text-primary-container transition-colors"
-                >+91 75948 27429</a
+                href="https://wa.me/917594827429"
+                target="_blank"
+                rel="noopener"
+                class="hover-lift flex items-center gap-3 bg-surface rounded-lg border border-white/5 p-4 min-h-[64px]"
               >
+                <span
+                  class="flex items-center justify-center w-11 h-11 rounded bg-primary-container/10 flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined text-primary-container"
+                    >chat</span
+                  >
+                </span>
+                <div class="min-w-0">
+                  <p class="font-label-caps text-label-caps text-on-surface-variant opacity-70">
+                    WHATSAPP
+                  </p>
+                  <p class="text-sm text-on-surface truncate">
+                    +91 75948 27429
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://linkedin.com/in/rinshidrazaq"
+                target="_blank"
+                rel="noopener"
+                class="hover-lift flex items-center gap-3 bg-surface rounded-lg border border-white/5 p-4 min-h-[64px]"
+              >
+                <span
+                  class="flex items-center justify-center w-11 h-11 rounded bg-primary-container/10 flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined text-primary-container"
+                    >work</span
+                  >
+                </span>
+                <div class="min-w-0">
+                  <p class="font-label-caps text-label-caps text-on-surface-variant opacity-70">
+                    LINKEDIN
+                  </p>
+                  <p class="text-sm text-on-surface truncate">
+                    /in/rinshidrazaq
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://github.com/muhammedrinshidvpr-coder"
+                target="_blank"
+                rel="noopener"
+                class="hover-lift flex items-center gap-3 bg-surface rounded-lg border border-white/5 p-4 min-h-[64px]"
+              >
+                <span
+                  class="flex items-center justify-center w-11 h-11 rounded bg-primary-container/10 flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined text-primary-container"
+                    >code</span
+                  >
+                </span>
+                <div class="min-w-0">
+                  <p class="font-label-caps text-label-caps text-on-surface-variant opacity-70">
+                    GITHUB
+                  </p>
+                  <p class="text-sm text-on-surface truncate">
+                    muhammedrinshidvpr-coder
+                  </p>
+                </div>
+              </a>
+            </div>
+            <p class="font-label-caps text-label-caps text-on-surface-variant opacity-60 mt-6">
+              KERALA, INDIA · REMOTE
             </p>
-            <p class="font-label-caps text-label-caps text-on-surface-variant">
-              LOCATION
-            </p>
-            <p class="font-body-lg text-body-lg text-on-surface">
-              Kerala, India · Remote
+            <p class="text-sm text-on-surface-variant mt-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-base text-primary-container"
+                >schedule</span
+              >
+              Usually replies within 24–48 hours.
             </p>
           </div>
           <div>
@@ -1479,7 +1968,7 @@
                   name="name"
                   type="text"
                   required
-                  class="bg-surface border border-white/10 rounded px-4 py-3 text-on-surface focus:border-primary-container focus:ring-primary-container focus:outline-none focus:ring-2"
+                  class="bg-surface border border-white/10 rounded px-4 py-4 text-on-surface focus:border-primary-container focus:ring-primary-container focus:outline-none focus:ring-2 min-h-[52px]"
                 />
               </div>
               <div class="flex flex-col gap-2">
@@ -1493,7 +1982,7 @@
                   name="email"
                   type="email"
                   required
-                  class="bg-surface border border-white/10 rounded px-4 py-3 text-on-surface focus:border-primary-container focus:ring-primary-container focus:outline-none focus:ring-2"
+                  class="bg-surface border border-white/10 rounded px-4 py-4 text-on-surface focus:border-primary-container focus:ring-primary-container focus:outline-none focus:ring-2 min-h-[52px]"
                 />
               </div>
               <div class="flex flex-col gap-2">
@@ -1507,14 +1996,14 @@
                   name="message"
                   rows="4"
                   required
-                  class="bg-surface border border-white/10 rounded px-4 py-3 text-on-surface focus:border-primary-container focus:ring-primary-container focus:outline-none focus:ring-2"
+                  class="bg-surface border border-white/10 rounded px-4 py-4 text-on-surface focus:border-primary-container focus:ring-primary-container focus:outline-none focus:ring-2"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                class="inline-flex items-center justify-center bg-primary-container text-surface-container-lowest font-label-caps text-label-caps px-8 py-4 rounded hover:scale-95 transition-transform duration-300"
+                class="inline-flex items-center justify-center w-full bg-primary-container text-surface-container-lowest font-label-caps text-label-caps px-8 py-4 rounded hover:scale-[0.98] transition-transform duration-300 min-h-[52px]"
               >
-                SEND MESSAGE
+                Send Message
               </button>
             </form>
             <div
@@ -1560,6 +2049,13 @@
             target="_blank"
             rel="noopener"
             >GitHub</a
+          >
+          <a
+            class="font-label-caps text-label-caps text-secondary-fixed-dim hover:text-on-surface transition-colors"
+            href="https://wa.me/917594827429"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
           >
           <a
             class="font-label-caps text-label-caps text-secondary-fixed-dim hover:text-on-surface transition-colors"
