@@ -77,6 +77,46 @@ textarea:focus-visible {
   display: block;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Shared card hover pattern: projects, skills, certifications, GitHub strip */
+.hover-lift {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.hover-lift:hover,
+.hover-lift:focus-within {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* Honest disabled state for not-yet-launched project links */
+.coming-soon {
+  opacity: 0.65;
+  cursor: default;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hover-lift:hover,
+  .hover-lift:focus-within {
+    transform: none;
+  }
 }
