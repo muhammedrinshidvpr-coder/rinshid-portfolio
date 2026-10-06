@@ -69,4 +69,12 @@ Use `##` for the first section heading; the page already provides the title as `
 
 ## Profile and deployment settings
 
-Edit `src/config/site.ts` for identity, bio, public email and links. Each link has a platform label, URL, purpose, group, order and featured flag. No handles are guessed. Before changing the production domain, update `site.url` (or `SITE_URL`), deploy, and check canonical tags, RSS and sitemap URLs. No contact form is configured; email and profile links are functional as-is.
+Edit `src/config/site.ts` for identity, bio, public email and links. `profile` holds education, the confirmed founder role, and month-precision past-work details; `themes` holds the notebook’s editorial direction. Each link has a platform label, URL, purpose, group, order and featured flag. No handles are guessed. Before changing the production domain, update `site.url` (or `SITE_URL`), deploy, and check canonical tags, RSS and sitemap URLs. No contact form is configured; email and profile links are functional as-is.
+
+## Voice and topic direction
+
+The notebook is for CS students adapting to AI and new technology. Its four recurring themes are engineering in the AI era, learning through building, time/focus/productivity, and attention/personal growth. Use these as a guide to choosing tags, not as claims of existing publications or professional expertise. Search controls appear when published writing exists.
+
+Write clearly, as a fellow student who builds and keeps learning. Start with a concrete question, show a useful example, and distinguish observations from assumptions. Explain prompt/context engineering through practical situations. Productivity and social-media writing should offer personal reflections and useful experiments without invented results or guaranteed outcomes.
+
+The author confirmed that Azmora work was **June–August 2026**, involving **n8n automation on AWS**. Keep it marked as past work; do not imply current employment or expose internal workflows. CosmIQ’s confirmed title is **Founder**.

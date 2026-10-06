@@ -31,14 +31,14 @@ const isActive = (path: string) => path === '/' ? current === pathFor('/') : cur
     <div class="shell">
       <header class="masthead" lang="en">
         <a class="wordmark" href={pathFor('/')}>{site.title}<span class="wordmark-dot">.</span></a>
-        <div class="masthead-tools"><span class="masthead-note">A work in progress, in the best sense.</span>
+        <div class="masthead-tools"><span class="masthead-note">{site.mastheadNote}</span>
           <label class="theme-control"><span class="sr-only">Appearance</span><select id="theme" aria-label="Appearance"><option value="system">System theme</option><option value="light">Light theme</option><option value="dark">Dark theme</option></select></label>
         </div>
       </header>
       <div class="page-grid">
         <aside class="rail" lang="en">
           <a class="monogram" href={pathFor('/')} aria-label="Rinshid’s notebook home">r<span>.</span></a>
-          <p class="rail-name">Muhammed Rinshid V P</p><p class="rail-bio">Student developer.<br />Always a little curious.</p>
+          <p class="rail-name">{site.name}</p><p class="rail-bio">CS student &amp; builder.<br />{site.profile.role} of {site.profile.venture}.</p>
           <nav aria-label="Main navigation"><ul>{site.navigation.map((link) => <li><a href={pathFor(link.path)} aria-current={isActive(link.path) ? 'page' : undefined}>{link.label}</a></li>)}</ul></nav>
           <nav class="secondary-nav" aria-label="Explore more"><ul>{site.secondary.map((link) => <li><a href={pathFor(link.path)} aria-current={isActive(link.path) ? 'page' : undefined}>{link.label}</a></li>)}</ul></nav>
           <p class="rail-location">From Kerala, India<br /><span lang="ml">പഠിച്ചുകൊണ്ടിരിക്കുന്നു.</span></p>

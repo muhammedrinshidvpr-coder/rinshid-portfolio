@@ -41,4 +41,5 @@ test('published feed and relationships include real entries but not draft canari
   const rss = await (await request.get('/rss.xml')).text(); expect(rss).toContain('Fixture guide in English'); expect(rss).not.toContain('CANARY');
   expect((await request.get('/writing/draft-canary/')).status()).toBe(404);
   await page.goto('/projects/blinkbreak/'); await expect(page.getByRole('link', { name: 'Fixture video →' })).toBeVisible();
+  await page.goto('/videos/'); await expect(page.getByRole('heading', { level: 2, name: 'Fixture video', exact: true })).toBeVisible();
 });

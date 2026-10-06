@@ -8,7 +8,7 @@ featured: true
 order: 2
 problem: Getting a small piece of work off a shared lab computer often means signing into a personal account or emailing a file to yourself.
 audience: Engineering students working between shared computers and personal devices.
-role: Developer of the public CosmIQ Sync web application.
+role: Built the web application, including room creation, code sharing, and screenshot uploads.
 features:
   - Create or join a workspace using a five-character room code.
   - Post code snippets, copy them, or download them as named text files.
@@ -18,18 +18,14 @@ lessons:
   - A short room code makes joining simple, but is not the same as private account-based access.
   - An expiry countdown in the interface and actual server-side deletion are separate responsibilities.
 limitations:
-  - A shared room code is an access mechanism; this should not be treated as a confidential file vault.
-  - Retention descriptions differ between older portfolio copy and the repository. Automatic deletion is not guaranteed by this case study.
-  - The reviewed workspace fetches items on load and after local changes; automatic cross-device live updates are not claimed here.
+  - Access is based on a shared room code. Avoid putting sensitive files in a workspace.
+  - The interface shows an expiry countdown; server-side automatic deletion still needs verification.
+  - Items load when a workspace opens and after local changes. The current interface does not subscribe to live updates from another device.
 source: https://github.com/muhammedrinshidvpr-coder/cosmiq-sync
 demo: https://cosmiq-sync.vercel.app/
 ---
-## Built around the lab workflow
+## A simpler handoff
 
-The starting point is familiar: finish a program on a shared machine, then find a way to take it home. CosmIQ Sync gives that handoff a dedicated interface. One device opens a room; the other joins with its code.
+I built CosmIQ Sync around a familiar lab workflow: finish a program on a shared computer, then take it to your own device. One device creates a room; the other joins with its code. There’s no account sign-in step.
 
-Code snippets and screenshots have separate views. Snippets can be copied or downloaded with a chosen filename, and the workspace includes a manual cleanup action.
-
-## What the prototype explores
-
-The application connects a React interface to Supabase database and storage operations. It is an exploration of low-friction sharing, with explicit trade-offs around room access, refresh behavior, and cleanup. The public source is available for anyone who wants to inspect those decisions.
+The React interface uses Supabase for workspace data and image storage. Code can be copied or downloaded as a named file, and the workspace includes a manual cleanup action. The prototype makes the handoff easier to try while leaving room to improve access, updates, and cleanup.

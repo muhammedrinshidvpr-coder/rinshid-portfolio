@@ -8,7 +8,7 @@ featured: true
 order: 3
 problem: College applicants need to navigate cutoff information and find the right help-desk contact, often on a phone.
 audience: KEAM aspirants and students looking for TKM College of Engineering help-desk resources.
-role: Developer credited in the public repository, built for the Pragathi help-desk context.
+role: Built the portal for the Pragathi help-desk context, bringing student resources into one interface.
 features:
   - A cutoff-predictor section alongside events and answer-key resources.
   - Department help-desk and general contact sections.
@@ -20,13 +20,10 @@ lessons:
 limitations:
   - Historical cutoffs are reference information, not a guarantee of admission or current eligibility.
   - Applicants should verify dates, rules, and allotment decisions with official admissions sources.
-  - Adoption totals and institutional endorsement are not asserted in this case study.
 source: https://github.com/muhammedrinshidvpr-coder/pragathi-keam-portal
 ---
-## One place to start asking questions
+## Bringing the information together
 
-This portal groups the resources a new applicant might need: cutoff exploration, answer keys, events, and ways to reach a department help desk. The public code organizes these as separate sections rather than one long set of unstructured links.
+I built the portal to give applicants one place to explore cutoff information, find answer keys and events, and reach a department help desk. Each resource has its own section so visitors can start with the question they have.
 
-## A maintained information tool
-
-The repository uses TanStack Start with React and a Supabase data layer. Its administration tools support updating the reference information. The important boundary is between helping someone explore past data and making a promise about a future admission result.
+TanStack Start and React provide the interface, while Supabase stores the reference information. An administration area supports maintaining the resources. The predictor helps people explore historical cutoffs; official admissions sources remain the place to check current rules and decisions.

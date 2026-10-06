@@ -5,7 +5,7 @@ test('visitors can explore projects and contact the author without broken routes
   await page.goto('/');
   await page.getByRole('link', { name: 'BlinkBreak', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('BlinkBreak');
-  await expect(page.getByRole('heading', { name: 'What’s implemented' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'What it does' })).toBeVisible();
   await page.getByRole('navigation', { name: 'Explore more' }).getByRole('link', { name: 'Contact', exact: true }).click();
   await expect(page.getByRole('link', { name: 'muhammedrinshidvpr@gmail.com' })).toHaveAttribute('href', 'mailto:muhammedrinshidvpr@gmail.com');
 });
@@ -35,13 +35,13 @@ test('draft and private direct URLs are not published', async ({ request }) => {
   for (const path of ['/writing/draft-canary/', '/videos/draft-video/', '/projects/private-project-canary/']) expect((await request.get(path)).status()).toBe(404);
 });
 
-test('empty archive retains URL filters and accessible results feedback', async ({ page }) => {
+test('empty writing archive presents useful context without search controls', async ({ page }) => {
+  const errors: string[] = []; page.on('pageerror', (error) => errors.push(error.message));
   await page.goto('/writing/?q=agents&language=ml');
-  await expect(page.getByRole('searchbox')).toHaveValue('agents');
-  await expect(page.getByRole('combobox', { name: 'Language', exact: true })).toHaveValue('ml');
-  await expect(page.locator('#results-count')).toContainText('0 entries');
-  await page.getByRole('button', { name: 'Clear filters' }).click();
-  await expect(page).toHaveURL(/\/writing\/$/);
+  await expect(page.getByRole('searchbox')).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'No writing published yet.' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Engineering in the AI era', exact: true })).toBeVisible();
+  expect(errors).toEqual([]);
 });
 
 test('keyboard skip link and desktop composition are usable', async ({ page }) => {
@@ -52,7 +52,20 @@ test('keyboard skip link and desktop composition are usable', async ({ page }) =
   await page.screenshot({ path: '.local/home-desktop.png', fullPage: true });
   await page.setViewportSize({ width: 390, height: 844 }); await page.screenshot({ path: '.local/home-mobile.png', fullPage: true });
   await page.getByRole('navigation', { name: 'Footer' }).getByRole('link', { name: 'Student guides' }).click();
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Start with understanding.');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Student guides.');
   await page.getByRole('navigation', { name: 'Footer' }).getByRole('link', { name: 'Videos', exact: true }).click();
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('In motion.');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Videos.');
+});
+
+test('profile is visible on mobile and past automation work is dated accurately', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 }); await page.goto('/');
+  await expect(page.locator('main .intro')).toContainText('Muhammed Rinshid V P');
+  await expect(page.locator('.hero-context')).toContainText('Previously: n8n automation on AWS at Azmora · June–August 2026');
+  await page.getByRole('link', { name: 'About me', exact: true }).click();
+  await expect(page.locator('.experience-list')).toContainText('CosmIQ · Founder');
+  await expect(page.locator('.experience-list')).toContainText('June–August 2026 · Past work');
+  await expect(page.locator('.experience-list')).toContainText('This work ended in August 2026');
+  await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Now', exact: true }).click();
+  await expect(page.locator('.page-head time')).toHaveAttribute('datetime', '2026-10-06T00:00:00.000Z');
+  await expect(page.getByRole('heading', { name: 'Building this notebook', exact: true })).toBeVisible();
 });
