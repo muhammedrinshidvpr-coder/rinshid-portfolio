@@ -1,0 +1,33 @@
+---
+import Shell from '../layouts/Shell.astro';
+import Entry from '../components/Entry.astro';
+import { catalog } from '../lib/content';
+import { pathFor, formatDate } from '../lib/urls';
+import { publicLinks } from '../config/site';
+const content = await catalog();
+const projects = content.projects.filter((entry) => entry.data.featured).slice(0, 3);
+const guides = content.writing.filter((entry) => entry.data.type === 'guide' && entry.data.featured).slice(0, 2);
+const now = content.now[0];
+---
+<Shell>
+  <section class="hero">
+    <p class="eyebrow">An open notebook · by Rinshid</p>
+    <h1>Things worth<br />figuring out.</h1>
+    <p class="intro">I’m <strong>Rinshid</strong>, a student developer from Kerala. I build useful software and share what I learn—so the next person has a clearer place to start.</p>
+    <div class="link-row"><a href={pathFor('/about/')}>A little about me <span aria-hidden="true">→</span></a><a href={pathFor('/projects/')}>Explore my work <span aria-hidden="true">→</span></a></div>
+  </section>
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="section-heading"><h2 id="projects-title">Things I’ve been building</h2><a href={pathFor('/projects/')}>All projects →</a></div>
+    {projects.map((entry) => <Entry collection="projects" entry={entry} />)}
+  </section>
+  <section class="section" aria-labelledby="writing-title">
+    <div class="section-heading"><h2 id="writing-title">From the notebook</h2><a href={pathFor('/writing/')}>Writing archive →</a></div>
+    {content.writing.length ? content.writing.slice(0, 3).map((entry) => <Entry collection="writing" entry={entry} />) : <div class="empty-note"><h3>A fresh page.</h3><p>This is where I’ll share explanations, project notes, and questions I’m working through—in English and Malayalam. There aren’t any published entries yet. Until then, the projects are a good place to begin.</p></div>}
+  </section>
+  {now && <section class="section"><div class="section-heading"><h2>On my desk</h2><a href={pathFor('/now/')}>Now →</a></div><p>{now.data.summary}</p><p class="meta">Updated <time datetime={now.data.updated.toISOString()}>{formatDate(now.data.updated)}</time></p></section>}
+  {content.milestones.length > 0 && <section class="section"><h2>Along the way</h2>{content.milestones.slice(0, 2).map((entry) => <article class="entry"><div class="meta">{formatDate(entry.data.date)} · {entry.data.role}</div><h3><a href={entry.data.source}>{entry.data.title} ↗</a></h3><p>{entry.data.summary}</p></article>)}</section>}
+  {guides.length > 0 && <section class="section"><div class="section-heading"><h2>For fellow students</h2><a href={pathFor('/guides/')}>Student guides →</a></div>{guides.map((entry) => <Entry collection="writing" entry={entry} />)}</section>}
+  {content.videos.length > 0 && <section class="section"><div class="section-heading"><h2>Watch & learn</h2><a href={pathFor('/videos/')}>All videos →</a></div>{content.videos.slice(0, 2).map((entry) => <Entry collection="videos" entry={entry} />)}</section>}
+  {content.external.length > 0 && <section class="section"><h2>Published elsewhere</h2>{content.external.slice(0, 3).map((entry) => <article class="entry" lang={entry.data.language}><div class="meta">{entry.data.platform} · {formatDate(entry.data.published)}</div><h3><a href={entry.data.url}>{entry.data.title} ↗</a></h3><p>{entry.data.summary}</p></article>)}</section>}
+  <section class="section" id="contact"><div class="section-heading"><h2>Let’s compare notes.</h2></div><p style="color:var(--muted);font-size:.94rem">Working on something useful, learning something new, or stuck on a student project? I’d be glad to hear from you.</p><div class="link-row"><a href={pathFor('/contact/')}>Say hello →</a>{publicLinks.filter((link) => link.featured && link.group !== 'Watch').map((link) => <a href={link.url}>{link.platform} ↗</a>)}</div></section>
+</Shell>

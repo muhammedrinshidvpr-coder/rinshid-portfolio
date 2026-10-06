@@ -1,0 +1,24 @@
+---
+import Shell from '../layouts/Shell.astro';
+import { publicLinks, site } from '../config/site';
+import { catalog } from '../lib/content';
+import { pathFor, formatDate } from '../lib/urls';
+const { milestones } = await catalog();
+---
+<Shell title="About" description="I’m Muhammed Rinshid V P, a student developer from Kerala interested in useful software and accessible explanations.">
+  <header class="page-head"><p class="eyebrow">The person behind the pages</p><h1>Hello, I’m Rinshid.</h1><p class="summary">A student developer from Kerala, interested in how things work—and what we can make with that understanding.</p></header>
+  <article class="prose" id="about">
+    <p>My full name is <strong>{site.name}</strong>. I’m studying Computer Science & Engineering at TKM College of Engineering. I like turning a practical problem into something people can try, inspect, and improve.</p>
+    <p>That has led me to different kinds of tools: a desktop break reminder, a workspace for moving lab code between devices, and a student admissions help-desk portal. They share a starting point: something in an everyday workflow could be a little easier.</p>
+    <h2>Learning, then passing it on</h2>
+    <p>I want to help other students understand technology and build useful things. An explanation is valuable when it gives someone a way to try an idea for themselves—not just a new term to remember.</p>
+    <p>This notebook is a home for that approach. I’ll use it to connect my projects with the decisions behind them, share short notes, and work toward clearer explanations in English and Malayalam.</p>
+    <h2>Questions I’m interested in</h2>
+    <p>I’m curious about AI agents, world models, practical software, and free and open source tools. These are areas I want to explore and understand better. Reading notes here will distinguish someone else’s findings from my own experiments and questions.</p>
+    <h2 id="skills">Tools, in context</h2>
+    <ul><li><strong>Web interfaces:</strong> React and TypeScript in projects such as CosmIQ Sync; TanStack Start in the KEAM portal.</li><li><strong>Shared data:</strong> Supabase and PostgreSQL for web application data and storage.</li><li><strong>Desktop utilities:</strong> Tauri and Rust alongside React for BlinkBreak.</li><li><strong>Working in public:</strong> Git and GitHub for source, release notes, and project discussions.</li></ul>
+    <h2 id="education">Education</h2><p>B.Tech in Computer Science & Engineering, TKM College of Engineering. Expected graduation: 2029.</p>
+  </article>
+  {milestones.length > 0 && <section class="section" id="experience"><h2>Along the way</h2><ol class="timeline">{milestones.map((entry) => <li><p class="meta">{formatDate(entry.data.date)} · {entry.data.role}</p><h3>{entry.data.title}</h3><p>{entry.data.summary}</p><a href={entry.data.source}>Source ↗</a></li>)}</ol></section>}
+  <section class="section"><h2>Find me elsewhere</h2><div class="link-row">{publicLinks.filter((link) => link.featured).map((link) => <a href={link.url}>{link.platform} ↗</a>)}<a href={pathFor('/contact/')}>Get in touch →</a></div></section>
+</Shell>
