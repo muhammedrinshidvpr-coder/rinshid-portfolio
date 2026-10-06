@@ -14,7 +14,7 @@
     <p>My portfolio and notebook now live at <a href="https://rinshid-portfolio.vercel.app/">rinshid-portfolio.vercel.app</a>.</p>
     <script>
       const routes = { '#about': '/about/', '#projects': '/projects/', '#experience': '/about/', '#skills': '/about/#skills', '#education': '/about/#education', '#contact': '/contact/' };
-      location.replace('https://rinshid-portfolio.vercel.app' + (routes[location.hash] || '/'));
+      location.replace('https://rinshid-portfolio.vercel.app' + (location.pathname.endsWith('/Rinshid_CV.html') ? '/about/' : routes[location.hash] || '/'));
     </script>
   </body>
 </html>

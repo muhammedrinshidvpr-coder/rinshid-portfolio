@@ -4,6 +4,8 @@ A warm, static portfolio and publishing home. Built with Astro 7, TypeScript, Ma
 
 **Live:** https://rinshid-portfolio.vercel.app/ · **Source:** https://github.com/muhammedrinshidvpr-coder/rinshid-portfolio
 
+See [delivery validation](docs/VALIDATION.md) for the completed checks and deployment details.
+
 ## Develop
 
 Node 22.12+ (24 recommended), npm:
